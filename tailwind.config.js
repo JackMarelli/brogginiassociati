@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  
+
   theme: {
     extend: {
       colors: {
@@ -28,11 +28,29 @@ module.exports = {
           900: "#1F1F1E",
         },
       },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+      },
       fontWeight: {
         DEFAULT: 300,
+        thin: 100,
+        extralight: 200,
+        light: 300,
+        normal: 400,
+        medium: 500,
+        semibold: 600,
+        bold: 700,
+        extrabold: 800,
+        black: 900,
+        // Your custom aliases
         rg: 300,
         md: 500,
         sb: 600,
+
+        // You can also add more precise weights if needed
+        // '350': 350,
+        // '450': 450,
+        // etc.
       },
       fontSize: {
         8: "8px",
@@ -68,6 +86,6 @@ module.exports = {
     "font-serif",
     "font-rg",
     "text-accent-light",
-    "text-gray-200"
+    "text-gray-200",
   ],
 };

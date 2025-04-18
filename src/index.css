@@ -5,3 +5,19 @@
 * {
   font-family: "Inter";
 }
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900; /* This range covers all weights */
+  font-display: swap;
+  src: url('../public/assets/fonts/Inter-VariableFont_opsz\,wght.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100 900; /* This range covers all weights */
+  font-display: swap;
+  src: url('../public/assets/fonts/Inter-Italic-VariableFont_opsz\,wght.ttf') format('woff2');
+}

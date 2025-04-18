@@ -7,7 +7,7 @@ export default function Nav() {
       <div>
         <img
           className="w-16 aspect-square"
-          src="assets/logo/logo.png"
+          src="assets/logo/black.png"
           alt="Logo di Broggini Associati"
         />
       </div>
