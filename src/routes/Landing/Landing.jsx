@@ -12,26 +12,26 @@ export default function Landing() {
     {
       title: "Consulenza Aziendale e Societaria",
       description:
-        "Offriamo servizi di consulenza e assistenza societaria qualificata dalle startup alle società consolidate, supportando le aziende nei seguenti aspetti della gestione, budgeting & reporting.",
+        "Offriamo servizi di consulenza e assistenza societaria completa per aziende italiane e internazionali, supportando le aziende con adeguati strumenti di controllo di gestione, budgeting & reporting.",
       icon: "building",
     },
     {
-      title: "Consulenza Aziendale e Societaria",
+      title: "Consulenza contabile e fiscale",
       description:
-        "Offriamo servizi di consulenza e assistenza societaria qualificata dalle startup alle società consolidate, supportando le aziende nei seguenti aspetti della gestione, budgeting & reporting.",
-      icon: "building",
+        "Offriamo servizi di consulenza e assistenza societaria completa per aziende italiane e internazionali, supportando le aziende con adeguati strumenti di controllo di gestione, budgeting & reporting.",
+      icon: "document",
     },
     {
-      title: "Consulenza Aziendale e Societaria",
+      title: "Contenzioso tributario",
       description:
-        "Offriamo servizi di consulenza e assistenza societaria qualificata dalle startup alle società consolidate, supportando le aziende nei seguenti aspetti della gestione, budgeting & reporting.",
-      icon: "building",
+        "Offriamo servizi di consulenza e assistenza societaria completa per aziende italiane e internazionali, supportando le aziende con adeguati strumenti di controllo di gestione, budgeting & reporting.",
+      icon: "scale",
     },
     {
-      title: "Consulenza Aziendale e Societaria",
+      title: "Gestione delle crisi di impresa",
       description:
-        "Offriamo servizi di consulenza e assistenza societaria qualificata dalle startup alle società consolidate, supportando le aziende nei seguenti aspetti della gestione, budgeting & reporting.",
-      icon: "building",
+        "Offriamo servizi di consulenza e assistenza societaria completa per aziende italiane e internazionali, supportando le aziende con adeguati strumenti di controllo di gestione, budgeting & reporting.",
+      icon: "chart",
     },
   ];
 
@@ -114,22 +114,28 @@ export default function Landing() {
       </section>
 
       {/* Services Section */}
-      <section className="bg-gray-50 py-20 px-8 md:px-16 grid grid-cols-4 gap-6">
-        <div className="flex flex-col col-span-2 gap-6 mt-32">
-          <h2 className="text-5xl font-medium">Le nostre competenze</h2>
-          <p className="text-xl max-w-3xl">
-            Il nostro studio mette in campo un team di professionisti
-            coordinato, che collabora fra loro in maniera sinergica e integrata,
-            al fine di garantire, oltre alle competenze più qualificate, elevata
-            flessibilità e tempestività nella risposta al cliente.
+      <section className="bg-white py-16">
+        <div className="container mx-auto px-6">
+          <h2 className="text-6xl font-medium mb-6 text-center">
+            Le nostre competenze
+          </h2>
+          <p className="text-center text-xl mb-20 max-w-3xl mx-auto">
+            Costruire e coltivare con dedizione un autentico rapporto di fiducia
+            tra il cliente e il suo professionista di riferimento, un legame che
+            ha resistito al passare del tempo e all'evolversi del panorama
+            economico.
           </p>
-          <Button text="Scopri di più" />
-        </div>
 
-        <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
-          {services.map((service, index) => (
-            <ServiceCard key={index} {...service} />
-          ))}
+          <div className="space-y-4">
+            {services.map((service, index) => (
+              <ServiceCard
+                key={index}
+                title={service.title}
+                description={service.description}
+                icon={service.icon}
+              />
+            ))}
+          </div>
         </div>
       </section>
 
