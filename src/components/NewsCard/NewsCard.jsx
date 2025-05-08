@@ -1,6 +1,14 @@
-export default function NewsCard({ title, description, image }) {
+import { useNavigate } from "react-router-dom";
+
+export default function NewsCard({ title, description, image, to="/" }) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(to);
+  }
+
   return (
-    <div className="col-span-12 md:col-span-4 flex flex-col bg-white overflow-hidden cursor-pointer">
+    <div onClick={handleClick} className="col-span-12 md:col-span-4 flex flex-col bg-white overflow-hidden cursor-pointer">
       {image && (
         <div className="w-full bg-gray-200 rounded-lg aspect-video overflow-hidden">
           <img src={image} alt={title} className="w-full h-full object-cover" />
