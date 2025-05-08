@@ -8,6 +8,7 @@ import Professionista from "./routes/Professionista/Professionista";
 import Servizi from "./routes/Servizi/Servizi";
 import Compliance from "./routes/Compliance/Compliance";
 import Blog from "./routes/Blog/Blog";
+import Privacy from "./routes/Privacy/Privacy";
 
 // Define routes
 const router = createBrowserRouter([
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
   { path: "/compliance", element: <Compliance /> },
   { path: "/blog", element: <Blog /> },
   { path: "/blog/:article", element: <Blog /> },
+  { path: "/privacy", element: <Privacy /> },
 ]);
 
 function App() {
