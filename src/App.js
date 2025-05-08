@@ -6,6 +6,7 @@ import Studio from "./routes/Studio/Studio";
 import Professionisti from "./routes/Professionisti/Professionisti";
 import Professionista from "./routes/Professionista/Professionista";
 import Servizi from "./routes/Servizi/Servizi";
+import Compliance from "./routes/Compliance/Compliance";
 
 // Define routes
 const router = createBrowserRouter([
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
   { path: "/servizi", element: <Servizi /> },
   { path: "/professionisti", element: <Professionisti /> },
   { path: "/professionisti/:slug", element: <Professionista /> },
+  { path: "/compliance", element: <Compliance /> },
 ]);
 
 function App() {
