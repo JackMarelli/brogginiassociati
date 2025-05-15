@@ -1,13 +1,23 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BaseLayout from "../../layouts/BaseLayout/BaseLayout";
 import Button from "../../components/Button/Button";
 import ServiceCard from "../../components/ServiceCard/ServiceCard.jsx";
 import NewsCard from "../../components/NewsCard/NewsCard.jsx";
 import Footer from "../../components/Footer/Footer";
-
 import ReactPlayer from "react-player";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+
 export default function Landing() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const services = [
     {
       title: "Consulenza Aziendale e Societaria",
@@ -61,7 +71,6 @@ export default function Landing() {
 
   return (
     <BaseLayout>
-      {/* Hero Section */}
       <section className="w-full h-screen relative">
         <img
           src="/assets/images/fold.png"
@@ -73,16 +82,13 @@ export default function Landing() {
             Mega titolo <br /> accattivante
           </h1>
           <h2 className="text-white text-xl font-md">
-            Costruire e coltivare con dedizione un autentico rapporto di fiducia{" "}
-            <br />
-            tra il cliente e il suo professionista di riferimento, un legame che
-            ha
+            Costruire e coltivare con dedizione un autentico rapporto di fiducia <br />
+            tra il cliente e il suo professionista di riferimento, un legame che ha
           </h2>
           <Button text="Scopri di più" />
         </div>
       </section>
 
-      {/* About Section */}
       <section className="flex flex-col items-center bg-white py-20 px-8 md:px-32 lg:px-64">
         <h2 className="text-5xl md:text-7xl font-medium text-center mb-12">
           I nostri obiettivi, <br /> da 50 anni
@@ -93,8 +99,6 @@ export default function Landing() {
           ha resistito al passare del tempo e all'evolversi del panorama
           economico.
         </p>
-
-        {/* Video Section */}
         <div className="w-full max-w-4xl mx-auto mb-20">
           <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
             <ReactPlayer
@@ -104,7 +108,6 @@ export default function Landing() {
               controls={true}
               light="/assets/images/thumbnail.png"
               playing={false}
-              pip={true}
             />
           </div>
           <p className="text-center mt-4 text-gray-500">
@@ -113,7 +116,6 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Services Section */}
       <section className="bg-white py-16">
         <div className="container mx-auto px-6">
           <h2 className="text-6xl font-medium mb-6 text-center">
@@ -126,7 +128,7 @@ export default function Landing() {
             economico.
           </p>
 
-          <div className="space-y-4">
+          <div className="hidden md:block space-y-4">
             {services.map((service, index) => (
               <ServiceCard
                 key={index}
@@ -136,10 +138,31 @@ export default function Landing() {
               />
             ))}
           </div>
+
+          <div className="md:hidden">
+            {isMounted && (
+              <Swiper
+                modules={[Pagination, Autoplay]}
+                spaceBetween={20}
+                slidesPerView={1}
+                pagination={{ clickable: true }}
+                autoplay={{ delay: 3000 }}
+              >
+                {services.map((service, index) => (
+                  <SwiperSlide key={index}>
+                    <ServiceCard
+                      title={service.title}
+                      description={service.description}
+                      icon={service.icon}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            )}
+          </div>
         </div>
       </section>
 
-      {/* News Section */}
       <section className="py-20 px-8 md:px-16">
         <h2 className="text-5xl md:text-7xl font-medium text-center mb-8">
           Rimani aggiornato
@@ -148,7 +171,6 @@ export default function Landing() {
           Stai sempre aggiornato con le ultime circolari redatte dal nostro
           studio
         </p>
-
         <div className="grid grid-cols-12 gap-8">
           {newsItems.map((news, index) => (
             <NewsCard key={index} {...news} />
@@ -156,7 +178,6 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Second Hero Section */}
       <section className="w-full h-[400px] relative">
         <img
           src="/assets/images/fold.png"
@@ -168,16 +189,14 @@ export default function Landing() {
             Mega titolo <br /> accattivante
           </h1>
           <h2 className="text-white text-xl font-md">
-            Costruire e coltivare con dedizione un autentico rapporto di fiducia{" "}
-            <br />
-            tra il cliente e il suo professionista di riferimento, un legame che
-            ha
+            Costruire e coltivare con dedizione un autentico rapporto di fiducia <br />
+            tra il cliente e il suo professionista di riferimento, un legame che ha
           </h2>
           <Button text="Scopri di più" />
         </div>
       </section>
 
-      {/* Footer */}
+      <Footer />
     </BaseLayout>
   );
 }

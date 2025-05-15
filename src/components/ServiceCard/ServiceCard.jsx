@@ -1,8 +1,12 @@
 export default function ServiceCard({ title, description, icon }) {
   return (
-    <div className="grid grid-cols-12 gap-8 bg-gray-50 rounded-lg px-8 pt-8 pb-16">
-      <h3 className="col-span-5 text-3xl font-semibold mb-2">{title}</h3>
-      <p className="col-span-6 text-lg text-gray-700">{description}</p>
+    <div className="flex flex-col items-start md:grid md:grid-cols-12 gap-4 md:gap-8 bg-gray-50 rounded-lg px-8 pt-8 pb-16">
+      <h3 className="order-1 md:order-none md:col-span-5 text-3xl font-semibold md:mb-2">
+        {title}
+      </h3>
+      <p className="order-2 md:order-none md:col-span-6 text-lg text-gray-700">
+        {description}
+      </p>
       <div className="col-span-1 flex items-start justify-end">
         <button className="bg-blue-900 text-white p-2 rounded-md">
           <svg
