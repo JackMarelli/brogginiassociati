@@ -17,12 +17,14 @@ export default function Professionisti() {
         />
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="absolute bottom-16 left-16 transform">
-          <h1 className="text-white text-6xl font-medium mb-6">I professionisti</h1>
+          <h1 className="text-white text-6xl font-medium mb-6">
+            I professionisti
+          </h1>
           <div className="max-w-2xl">
             <p className="text-white text-lg">
-              Guidiamo i nostri clienti verso la soluzione migliore con flessibilità ed
-              efficienza, grazie a una solida esperienza e a competenze tecniche
-              specifiche, sempre aggiornate.
+              Guidiamo i nostri clienti verso la soluzione migliore con
+              flessibilità ed efficienza, grazie a una solida esperienza e a
+              competenze tecniche specifiche, sempre aggiornate.
             </p>
             <p className="text-white text-lg mt-4">
               Il nostro team è in grado di affrontare e gestire problematiche
@@ -36,19 +38,18 @@ export default function Professionisti() {
       {/* Soci Section */}
       <section className="py-16 px-8 md:px-16">
         <h2 className="text-6xl font-medium text-center mb-16">Soci</h2>
-        
         <div className="flex flex-row flex-wrap justify-center gap-8">
-          {soci.map((socio, index) => (
-            <Link 
-              to={`/professionisti/${socio.slug}`} 
-              key={socio.id} 
+          {soci.map((socio) => (
+            <Link
+              to={`/professionisti/${socio.slug}`}
+              key={socio.id}
               className="flex flex-col w-80 group hover:opacity-90 transition-opacity"
             >
-              <div className="h-80 overflow-hidden rounded-lg bg-gray-200">
-                <img 
-                  src={socio.image} 
+              <div className="w-full aspect-square overflow-hidden rounded-lg bg-gray-200">
+                <img
+                  src={socio.image}
                   alt={socio.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="object-cover w-autogroup-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <h3 className="text-2xl font-medium mt-4">{socio.name}</h3>
@@ -61,19 +62,18 @@ export default function Professionisti() {
       {/* Associati Section */}
       <section className="py-16 px-8 md:px-16 bg-white">
         <h2 className="text-6xl font-medium text-center mb-16">Associati</h2>
-        
         <div className="flex flex-row flex-wrap justify-center gap-8">
-          {associati.map((associato, index) => (
-            <Link 
+          {associati.map((associato) => (
+            <Link
               to={`/professionisti/${associato.slug}`}
-              key={associato.id} 
+              key={associato.id}
               className="flex flex-col w-80 group hover:opacity-90 transition-opacity"
             >
-              <div className="h-72 overflow-hidden rounded-lg bg-gray-200">
-                <img 
-                  src={associato.image} 
+              <div className="w-full aspect-square overflow-hidden rounded-lg bg-gray-200">
+                <img
+                  src={associato.image}
                   alt={associato.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <h3 className="text-2xl font-medium mt-4">{associato.name}</h3>

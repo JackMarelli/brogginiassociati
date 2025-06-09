@@ -8,61 +8,72 @@ const complianceData = [
     id: 1,
     title: "Certificazione ISO 9001",
     description:
-      "Lo Studio dott. Riccardo Broggin opera ed eroga i propri servizi in conformità alla norma ISO 9001 sistema di gestione della qualità certificato da ente terzo dal 2003.",
-    image: "/assets/images/consulenza_aziendale_societaria.png",
+      "Lo Studio dott. Riccardo Broggini opera ed eroga i propri servizi in conformità alla norma ISO 9001, sistema di gestione della qualità certificato da ente terzo dal 2004.",
+    image: "/assets/images/penna_elefante.jpg",
     imagePosition: "right",
-    buttonText: "Scopri di più",
+    badge: "/assets/images/iso9001.png",
+    buttonText: "Leggi la nostra Politica per la Qualità",
   },
   {
     id: 2,
     title: "Certificazione SR 10",
     description:
-      "Dal 2023 lo Studio dott. Riccardo Broggin ha deciso di estendere il perimetro della certificazione allo standard IQNET SR10 per la responsabilità sociale.",
-    image: "/assets/images/consulenza_contabile_fiscale.png",
+      "Dal 2023 lo Studio dott. Riccardo Broggini ha deciso di estendere il perimetro della certificazione allo standard IQNET SR10 per la responsabilità sociale.",
+    image: "/assets/images/gestione_crisi_impresa.png",
     imagePosition: "left",
+    badge: "/assets/images/sr10.png",
     buttonText: "Scopri di più",
   },
   {
     id: 3,
-    title: "Politica per la qualità e la responsabilità sociale di impresa",
+    title: "Politica per la qualità e la responsabilità sociale d’impresa",
     description:
-      "Lo Studio dott. Riccardo Broggin intende mantenere e migliorare la posizione di rilievo di cui gode attualmente nel settore nel quale opera impegnandosi ad utilizzare quale strumento quotidiano il Sistema Qualità.",
-    image: "/assets/images/contenzioso_tributario.png",
+      "Lo Studio dott. Riccardo Broggini intende mantenere e migliorare la posizione di rilievo di cui gode attualmente nel settore nel quale opera, impegnandosi ad utilizzare il Sistema Qualità come strumento quotidiano per creare valore per i clienti e per i collaboratori.",
+    image: "/assets/images/vetrata.jpg",
     imagePosition: "right",
-    buttonText: "Scopri di più",
+    buttonText: "Leggi la Politica per la Qualità",
   },
   {
     id: 4,
-    title: "Certificazione parità di genere",
+    title: "Parità di genere",
     description:
-      "Lo Studio da sempre opera per promuovere una cultura paritaria, fornire risorse necessarie per il raggiungimento di obiettivi. Nel 2024 lo Studio ha conseguito la certificazione UNI PDR 125.",
-    image: "/assets/images/gestione_crisi_impresa.png",
+      "Lo Studio da sempre crede nell’importanza di valorizzare le proprie risorse come elemento fondamentale per il raggiungimento degli obiettivi. Nel 2024 ha conseguito la certificazione UNI PDR 125. Ha intrapreso un percorso orientato a garantire pari dignità e pari opportunità per tutti i dipendenti e collaboratori, promuovendo politiche di gestione delle differenze e tutela della maternità e paternità, indipendentemente da provenienza, cultura, religione, genere, orientamento sessuale, opinioni politiche o altre caratteristiche personali.",
+    image: "/assets/images/parita.JPG",
     imagePosition: "left",
-    buttonText: "Scopri di più",
+    buttonText: "Leggi la Politica per la Parità di Genere",
   },
   {
     id: 5,
-    title: "Politica per la parità di genere",
+    title: "Codice etico",
     description:
-      "Lo Studio dott. Riccardo Broggin ha intrapreso un percorso di certificazione della Parità di Genere orientato a garantire pari dignità e pari opportunità per tutti i dipendenti e collaboratori nell'ambito di un rapporto di lavoro trasparente e rispettoso, quale appartenenza di ruolo professionale, responsabilità, percorsi di attribuzione, posizioni di gestione delle differenze, tutela della maternità e della paternità, a prescindere dai paesi di origine, dalla cultura religiosa di appartenenza, dal genere, dall'orientamento sessuale, dalle opinioni politiche e da ogni altra caratteristica e stile personale.",
-    image: "/assets/images/consulenza_aziendale_societaria.png",
+      "Il Codice Etico rappresenta la guida ai valori e ai principi di comportamento condivisi dallo Studio: regole chiare di trasparenza e responsabilità per tutti i collaboratori e dipendenti, a tutela dell’integrità e della reputazione dello Studio.",
+    image: "/assets/images/libri.jpg",
     imagePosition: "right",
-    buttonText: "Scopri di più",
+    buttonText: "Leggi il nostro Codice Etico",
+  },
+  {
+    id: 6,
+    title: "Whistleblowing - Segnalazione molestie",
+    description:
+      "Lo Studio ha attivato un sistema di gestione delle segnalazioni per condotte illecite o non etiche, a tutela dell’organizzazione e dei dipendenti. È possibile effettuare le segnalazioni in modo responsabile, seguendo le procedure aziendali.",
+    image: "/assets/images/Occhiali.jpg",
+    imagePosition: "left",
+    buttonText: "Invia una segnalazione",
   },
 ];
 
-// Reusable Compliance Row Component
 const ComplianceRow = ({
   title,
   description,
   image,
   imagePosition,
   buttonText,
+  badge,
 }) => {
   return (
     <section className="py-12 px-8 md:px-16">
       <div
-        className={`h-96 flex flex-col ${
+        className={`h-fit flex flex-col ${
           imagePosition === "right" ? "lg:flex-row" : "lg:flex-row-reverse"
         } items-center gap-8`}
       >
@@ -70,11 +81,24 @@ const ComplianceRow = ({
           <div>
             <h2 className="text-2xl font-medium mb-4">{title}</h2>
             <p className="mb-6">{description}</p>
+            {badge && (
+              <div className="my-4">
+                <img
+                  src={badge}
+                  alt={`${title} badge`}
+                  className="w-24 h-auto"
+                />
+              </div>
+            )}
           </div>
           <Button text={buttonText} />
         </div>
         <div className="lg:w-1/2 h-full">
-          <img src={image} alt={title} className="w-full h-full rounded-lg object-cover" />
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full rounded-lg object-cover"
+          />
         </div>
       </div>
     </section>
@@ -97,12 +121,12 @@ export default function Compliance() {
           <div className="max-w-2xl">
             <p className="text-white text-lg">
               Consapevoli che il principale fattore di successo di ogni impresa
-              è costituito dalle risorse umane, lo STUDIO DOTT. RICCARDO BROGGIN
-              promuove il coinvolgimento del personale nel raggiungimento degli
-              obiettivi strategici aziendali e sostiene lo sviluppo di un
-              ambiente di lavoro caratterizzato da lealtà, fiducia reciproca e
-              collaborazione, valorizzando le competenze professionali
-              attraverso attività di formazione e crescita.
+              è costituito dalle risorse umane, lo Studio Dott. Riccardo
+              Broggini promuove il coinvolgimento del personale nel
+              raggiungimento degli obiettivi strategici aziendali e sostiene lo
+              sviluppo di un ambiente di lavoro caratterizzato da lealtà,
+              fiducia reciproca e collaborazione, valorizzando le competenze
+              professionali attraverso attività di formazione e crescita.
             </p>
           </div>
         </div>
@@ -115,6 +139,7 @@ export default function Compliance() {
             title={item.title}
             description={item.description}
             image={item.image}
+            badge={item.badge}
             imagePosition={item.imagePosition}
             buttonText={item.buttonText}
           />
