@@ -89,7 +89,7 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-700 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">©Copyright 2023</p>
+          <p className="text-gray-400 text-sm">©Copyright 2025</p>
           <Link to="/privacy">
             <p oncli className="text-gray-400 text-sm">
               Privacy Policy

@@ -3,10 +3,12 @@ import { useState, useEffect } from "react";
 import Button from "../../components/Button/Button";
 import NavOption from "../../components/NavOption/NavOption";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const location = useLocation();
 
   // Handle screen resize
   useEffect(() => {
@@ -57,11 +59,11 @@ export default function Nav() {
 
       {/* Desktop Navigation */}
       <div className="hidden lg:flex gap-8">
-        <NavOption text="Lo Studio" to="studio" />
-        <NavOption text="I Professionisti" to="professionisti" />
-        <NavOption text="Servizi" to="servizi" />
-        <NavOption text="Compliance" to="compliance" />
-        <NavOption text="Blog" to="blog" />
+        <NavOption text="Lo Studio" to="studio" currentPath={location.pathname}/>
+        <NavOption text="I Professionisti" to="professionisti" currentPath={location.pathname}/>
+        <NavOption text="Servizi" to="servizi" currentPath={location.pathname}/>
+        <NavOption text="Compliance" to="compliance" currentPath={location.pathname}/>
+        <NavOption text="Blog" to="blog" currentPath={location.pathname}/>
       </div>
 
       <div className="hidden lg:block">
