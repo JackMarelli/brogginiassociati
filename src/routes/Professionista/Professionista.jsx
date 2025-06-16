@@ -42,15 +42,15 @@ export default function Professionista() {
 
   return (
     <BaseLayout>
-      <div className="container mx-auto py-12 px-4 md:px-0">
+      <div className="container mx-auto py-12 px-4 md:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Image Column */}
           <div className="h-full">
-            <div className="bg-gray-100 rounded-lg overflow-hidden h-full max-h-[600px]">
+            <div className="bg-gray-100 rounded-lg overflow-hidden h-full max-h-[600px] ">
               <img 
                 src={professionista.image} 
                 alt={professionista.name} 
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-top"
               />
             </div>
           </div>

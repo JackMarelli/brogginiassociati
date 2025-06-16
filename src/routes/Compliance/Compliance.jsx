@@ -67,15 +67,15 @@ const ComplianceRow = ({
   description,
   image,
   imagePosition,
-  buttonText,
   badge,
+  button, // now expecting a JSX element (optional)
 }) => {
   return (
     <section className="py-12 px-8 md:px-16">
       <div
         className={`h-fit flex flex-col ${
           imagePosition === "right" ? "lg:flex-row" : "lg:flex-row-reverse"
-        } items-center gap-8`}
+        } items-start gap-8`}
       >
         <div className="lg:w-1/2 grow h-full flex flex-col justify-between">
           <div>
@@ -91,7 +91,8 @@ const ComplianceRow = ({
               </div>
             )}
           </div>
-          <Button text={buttonText} />
+          {/* Only render button if it's provided */}
+          {button && <div>{button}</div>}
         </div>
         <div className="lg:w-1/2 h-full">
           <img
@@ -116,9 +117,9 @@ export default function Compliance() {
           className="w-full h-full object-cover opacity-70"
         />
         <div className="absolute inset-0 bg-black opacity-30"></div>
-        <div className="absolute bottom-16 left-16 transform">
-          <h1 className="text-white text-6xl font-medium mb-6">Compliance</h1>
-          <div className="max-w-2xl">
+        <div className="absolute bottom-16 left-8 md:left-16 transform">
+          <h1 className="text-white text-5xl md:text-6xl font-medium mb-6">Compliance</h1>
+          <div className="max-w-[300px] max-w-2xl">
             <p className="text-white text-lg">
               Consapevoli che il principale fattore di successo di ogni impresa
               è costituito dalle risorse umane, lo Studio Dott. Riccardo
@@ -141,7 +142,16 @@ export default function Compliance() {
             image={item.image}
             badge={item.badge}
             imagePosition={item.imagePosition}
-            buttonText={item.buttonText}
+            button={
+              item.title === "Codice etico" ? (
+                <Button
+                  text="Leggi il nostro Codice Etico"
+                  onClick={() =>
+                    window.open("/assets/documents/codice_etico_rev1.pdf", "_blank")
+                  }
+                />
+              ) : null
+            }
           />
           {index < complianceData.length - 1 && (
             <div className="flex justify-center">

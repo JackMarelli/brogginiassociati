@@ -1,165 +1,172 @@
 {
-    "soci": [
-      {
-        "id": "riccardo-broggini-1",
-        "name": "Riccardo Broggini",
-        "slug": "riccardo-broggini",
-        "role": "Socio fondatore",
-        "image": "/assets/images/professionals/riccardo_broggini.jpg",
-        "areas": [
-          "Consulenza aziendale e societaria",
-          "Consulenza contabile e fiscale",
-          "Contenzioso tributario"
-        ],
-        "experience": [
-          "È tra i soci dello Studio Dott. Riccardo Broggini - Dottori Commercialisti Associati.",
-          "Svolge attività di consulenza fiscale e societaria da oltre 30 anni.",
-          "Ha seguito numerose operazioni di fusione, acquisizione e ristrutturazione aziendale."
-        ],
-        "education": [
-          "Laurea in Economia e Commercio presso l'Università degli Studi di Milano",
-          "Iscritto all'Albo dei Dottori Commercialisti dal 1980",
-          "Revisore Contabile dal 1992"
-        ]
-      },      
-      {
-        "id": "giulio-broggini",
-        "name": "Giulio Broggini",
-        "slug": "giulio-broggini",
-        "role": "Supervisore dei dipartimenti Operazioni straordinarie e Crisi d’impresa",
-        "image": "/assets/images/professionals/giulio_broggini.jpg",
-        "areas": [
-          "Operazioni straordinarie",
-          "Crisi d'impresa e procedure concorsuali",
-          "Consulenza e assistenza fiscale e societaria",
-          "Collegi sindacali e revisione legale"
-        ],
-        "experience": [
-          "È tra i soci dello Studio Dott. Riccardo Broggini - Dottori Commercialisti Associati.",
-          "Vincitore del premio \"Professionista Digitale 2017/2018\" dell'Osservatorio Professionisti e Innovazione Digitale.",
-          "Relatore in conferenze sul Codice della crisi d'impresa e dell'insolvenza.",
-          "Fa parte della redazione locale per Varese e Busto Arsizio del portale delle procedure concorsuali www.crisieinsolenza.it",
-          "Cultore della materia di Diritto fallimentare presso il dipartimento di Economia dell'Università degli Studi dell'Insubria."
-        ],
-        "education": [
-          "È tra i soci dello Studio Dott. Riccardo Broggini - Dottori Commercialisti Associati.",
-          "Vincitore del premio \"Professionista Digitale 2017/2018\" dell'Osservatorio Professionisti e Innovazione Digitale.",
-          "Relatore in conferenze sul Codice della crisi d'impresa e dell'insolvenza.",
-          "Fa parte della redazione locale per Varese e Busto Arsizio del portale delle procedure concorsuali www.crisieinsolenza.it",
-          "Cultore della materia di Diritto fallimentare presso il dipartimento di Economia dell'Università degli Studi dell'Insubria."
-        ]
-      },
-      {
-        "id": "giovanni-bottinelli",
-        "name": "Giovanni Bottinelli",
-        "slug": "giovanni-bottinelli",
-        "role": "Supervisore del dipartimento Area fiscale e Contenzioso tributario",
-        "image": "/assets/images/professionals/giovanni_bottinelli.jpg",
-        "areas": [
-          "Area fiscale",
-          "Contenzioso tributario",
-          "Consulenza fiscale internazionale"
-        ],
-        "experience": [
-          "È tra i soci dello Studio Dott. Riccardo Broggini - Dottori Commercialisti Associati.",
-          "Esperto in fiscalità nazionale e internazionale.",
-          "Ha assistito numerosi clienti in contenziosi tributari di rilevante complessità."
-        ],
-        "education": [
-          "Laurea in Economia e Legislazione per l'Impresa",
-          "Master in International Tax Law",
-          "Iscritto all'Albo dei Dottori Commercialisti"
-        ]
-      }
-    ],
-    "associati": [
-      {
-        "id": "marco-bazzanella",
-        "name": "Marco Bazzanella",
-        "slug": "marco-bazzanella",
-        "role": "Responsabile del dipartimento Contenzioso tributario",
-        "image": "/assets/images/professionals/marco_bazzanella.jpg",
-        "areas": [
-          "Contenzioso tributario",
-          "Fiscalità d'impresa",
-          "Contenzioso in materia di imposte dirette e indirette"
-        ],
-        "experience": [
-          "Associato presso lo Studio Dott. Riccardo Broggini dal 2012.",
-          "Esperto in contenzioso tributario con specializzazione in accertamenti fiscali.",
-          "Ha seguito numerosi ricorsi tributari con esito favorevole."
-        ],
-        "education": [
-          "Laurea in Economia e Commercio",
-          "Master in Diritto Tributario d'Impresa",
-          "Iscritto all'Albo dei Dottori Commercialisti"
-        ]
-      },
-      {
-        "id": "chiara-maria-carrara",
-        "name": "Chiara Maria Carrara",
-        "slug": "chiara-maria-carrara",
-        "role": "Responsabile del dipartimento Redazione dei bilanci d'esercizio",
-        "image": "/assets/images/professionals/chiara_carrara.jpg",
-        "areas": [
-          "Redazione dei bilanci d'esercizio",
-          "Principi contabili nazionali e internazionali",
-          "Revisione contabile"
-        ],
-        "experience": [
-          "Associata presso lo Studio Dott. Riccardo Broggini dal 2015.",
-          "Specializzata nella redazione di bilanci secondo i principi contabili nazionali e internazionali.",
-          "Consulente per numerose PMI in ambito contabile e di bilancio."
-        ],
-        "education": [
-          "Laurea in Economia Aziendale",
-          "Master in Revisione Aziendale",
-          "Iscritta all'Albo dei Dottori Commercialisti"
-        ]
-      },
-      {
-        "id": "roberta-motta",
-        "name": "Roberta Motta",
-        "slug": "roberta-motta",
-        "role": "Responsabile dipartimento Crisi d'impresa",
-        "image": "/assets/images/professionals/roberta_motta.jpg",
-        "areas": [
-          "Crisi d'impresa",
-          "Procedure concorsuali",
-          "Ristrutturazione del debito"
-        ],
-        "experience": [
-          "Associata presso lo Studio Dott. Riccardo Broggini dal 2014.",
-          "Esperta in procedure di ristrutturazione aziendale e concordati preventivi.",
-          "Ha gestito numerose procedure di risanamento per PMI in crisi."
-        ],
-        "education": [
-          "Laurea in Economia e Gestione delle Imprese",
-          "Master in Crisi e Risanamento d'Impresa",
-          "Iscritta all'Albo dei Dottori Commercialisti"
-        ]
-      },
-      {
-        "id": "irene-pramaggiore",
-        "name": "Irene Pramaggiore",
-        "slug": "irene-pramaggiore",
-        "role": "Responsabile del dipartimento Operazioni straordinarie",
-        "image": "/assets/images/professionals/irene_pramaggiore.jpg",
-        "areas": [
-          "Operazioni straordinarie",
-          "Fusioni e acquisizioni",
-          "Due diligence"
-        ],
-        "experience": [
-          "Associata presso lo Studio Dott. Riccardo Broggini dal 2016.",
-          "Specializzata in operazioni di M&A e ristrutturazioni societarie.",
-          "Ha seguito numerose operazioni di cessione e acquisizione di aziende."
-        ],
-        "education": [
-          "Laurea in Economia e Finanza",
-          "Master in Diritto Societario",
-          "Iscritta all'Albo dei Dottori Commercialisti"
-        ]
-      }
-    ]
-  }
+  "soci": [
+    {
+      "id": "riccardo-broggini-1",
+      "name": "Riccardo Broggini",
+      "slug": "riccardo-broggini",
+      "role": "Socio fondatore",
+      "image": "/assets/images/professionals/riccardo_broggini.jpg",
+      "areas": [
+        "Consulenza societaria, contrattuale, tributaria, concorsuale ed economico‑aziendale",
+        "Collegi sindacali e revisione legale"
+      ],
+      "experience": [
+        "Socio fondatore dello Studio Dott. Riccardo Broggini – Dottori Commercialisti Associati.",
+        "È stato docente ordinario di Discipline economico‑aziendali.",
+        "Ha ricoperto incarichi come curatore, commissario giudiziale e consulente per il Tribunale di Varese.",
+        "È stato presidente e consigliere di amministrazione di fondazioni e società per azioni."
+      ],
+      "education": [
+        "Laurea magistrale in Economia e Commercio presso l’Università Cattolica del Sacro Cuore",
+        "Iscritto all’Ordine dei Dottori Commercialisti e degli Esperti Contabili",
+        "Iscritto nel Registro dei Revisori Legali dei conti"
+      ]
+    },
+    {
+      "id": "giulio-broggini",
+      "name": "Giulio Broggini",
+      "slug": "giulio-broggini",
+      "role": "Socio – Supervisore dei dipartimenti Operazioni straordinarie e Crisi d’impresa",
+      "image": "/assets/images/professionals/giulio_broggini.jpg",
+      "areas": [
+        "Operazioni straordinarie",
+        "Crisi d'impresa e procedure concorsuali",
+        "Consulenza e assistenza fiscale e societaria",
+        "Collegi sindacali e revisione legale"
+      ],
+      "experience": [
+        "Socio dello Studio Dott. Riccardo Broggini – Dottori Commercialisti Associati.",
+        "Vincitore del premio “Professionista Digitale 2017/2018” dell’Osservatorio Professionisti e Innovazione Digitale.",
+        "Relatore in conferenze sul Codice della crisi d'impresa e insolvenza.",
+        "Membro della redazione locale di www.crisieinsolenza.it per Varese e Busto Arsizio.",
+        "Cultore della materia di Diritto fallimentare presso l’Università degli Studi dell’Insubria."
+      ],
+      "education": [
+        "Laurea in Economia e Commercio (presente sul sito)",
+        "Vincitore del premio “Professionista Digitale 2017/2018”",
+        "Cultore della materia di Diritto fallimentare presso Università dell’Insubria"
+      ]
+    },
+    {
+      "id": "giovanni-bottinelli",
+      "name": "Giovanni Bottinelli",
+      "slug": "giovanni-bottinelli",
+      "role": "Socio – Responsabile del dipartimento Area fiscale e Contenzioso tributario",
+      "image": "/assets/images/professionals/giovanni_bottinelli.jpg",
+      "areas": [
+        "Consulenza e assistenza fiscale e societaria",
+        "Contenzioso tributario",
+        "Collegi sindacali e revisione legale"
+      ],
+      "experience": [
+        "Socio dello Studio Dott. Riccardo Broggini – Dottori Commercialisti Associati.",
+        "Ha iniziato la libera professione nel 1994, dopo esperienza come responsabile amministrativo in azienda.",
+        "Specializzato in riorganizzazione aziendale e gestione di crisi d'impresa.",
+        "Attivo nella difesa contenziosa e pre‑contenziosa in ambito tributario.",
+        "Ha seguito costituzione e gestione di enti del Terzo settore."
+      ],
+      "education": [
+        "Laurea magistrale in Economia e Commercio presso l’Università Bocconi (1990)",
+        "Iscritto all’Ordine dei Dottori Commercialisti e degli Esperti Contabili (1992)",
+        "Iscritto al Registro dei Revisori Legali dei conti (1995)",
+        "Corso di Alta Formazione “Laboratorio del Contenzioso Tributario”"
+      ]
+    }
+  ],
+  "associati": [
+    {
+      "id": "marco-bazzanella",
+      "name": "Marco Bazzanella",
+      "slug": "marco-bazzanella",
+      "role": "Associato – Responsabile del dipartimento Contenzioso tributario",
+      "image": "/assets/images/professionals/marco_bazzanella.jpg",
+      "areas": [
+        "Contenzioso tributario",
+        "Consulenza e assistenza fiscale e societaria",
+        "Operazioni straordinarie",
+        "Collegi sindacali e revisione legale"
+      ],
+      "experience": [
+        "Associato presso lo Studio Dott. Riccardo Broggini dal 2009 (dopo esperienza bancaria).",
+        "Relatore in convegni fiscali.",
+        "Assiste imprese e privati in verifiche fiscali, fasi pre‑contenziose e giudiziarie.",
+        "Ha partecipato a piani di razionalizzazione e ristrutturazione societaria.",
+        "Svolge attività di consulente tecnico di parte in controversie civili e bancarie.",
+        "È membro effettivo di collegi sindacali e revisore legale in varie società."
+      ],
+      "education": [
+        "Laurea magistrale in Finanza presso Università Cattolica del Sacro Cuore",
+        "Iscritto all’Ordine dei Dottori Commercialisti e degli Esperti Contabili (2013)",
+        "Iscritto al Registro dei Revisori Legali dei conti (2013)",
+        "Corso di perfezionamento per magistrati tributari e patrocinatori davanti al giudice tributario (Univ. Milano)"
+      ]
+    },
+    {
+      "id": "chiara-maria-carrara",
+      "name": "Chiara Maria Carrara",
+      "slug": "chiara-maria-carrara",
+      "role": "Responsabile del dipartimento Redazione dei bilanci d'esercizio",
+      "image": "/assets/images/professionals/chiara_carrara.jpg",
+      "areas": [
+        "Redazione dei bilanci d'esercizio",
+        "Principi contabili nazionali e internazionali",
+        "Revisione contabile"
+      ],
+      "experience": [
+        "Associata presso lo Studio Dott. Riccardo Broggini dal 2015.",
+        "Specializzata nella redazione di bilanci secondo principi nazionali e internazionali.",
+        "Consulente per numerose PMI in ambito contabile e di bilancio."
+      ],
+      "education": [
+        "Laurea in Economia Aziendale",
+        "Master in Revisione Aziendale",
+        "Iscritta all’Albo dei Dottori Commercialisti"
+      ]
+    },
+    {
+      "id": "roberta-motta",
+      "name": "Roberta Motta",
+      "slug": "roberta-motta",
+      "role": "Responsabile dipartimento Crisi d'impresa",
+      "image": "/assets/images/professionals/roberta_motta.jpg",
+      "areas": [
+        "Crisi d'impresa",
+        "Procedure concorsuali",
+        "Ristrutturazione del debito"
+      ],
+      "experience": [
+        "Associata presso lo Studio Dott. Riccardo Broggini dal 2014.",
+        "Esperta in procedure di ristrutturazione aziendale e concordati preventivi.",
+        "Ha gestito numerose procedure di risanamento per PMI in crisi."
+      ],
+      "education": [
+        "Laurea in Economia e Gestione delle Imprese",
+        "Master in Crisi e Risanamento d'Impresa",
+        "Iscritta all’Albo dei Dottori Commercialisti"
+      ]
+    },
+    {
+      "id": "irene-pramaggiore",
+      "name": "Irene Pramaggiore",
+      "slug": "irene-pramaggiore",
+      "role": "Responsabile del dipartimento Operazioni straordinarie",
+      "image": "/assets/images/professionals/irene_pramaggiore.jpg",
+      "areas": [
+        "Operazioni straordinarie",
+        "Contrattualistica",
+        "Contenzioso tributario",
+        "Consulenza societaria e commerciale"
+      ],
+      "experience": [
+        "Associata presso lo Studio Dott. Riccardo Broggini dal 2015 (dopo pratica legale).",
+        "Collabora su diritto societario e commerciale.",
+        "Ha approfondito competenze in operazioni straordinarie e contenzioso tributario."
+      ],
+      "education": [
+        "Laurea magistrale in Giurisprudenza presso l’Università degli Studi di Milano (2014)",
+        "Iscritta all’Ordine degli Avvocati dal 2019",
+        "Corso di perfezionamento per patrocinatori davanti al Giudice tributario (Univ. Milano)"
+      ]
+    }
+  ]
+}

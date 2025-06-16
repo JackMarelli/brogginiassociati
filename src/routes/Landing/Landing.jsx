@@ -81,7 +81,7 @@ export default function Landing() {
           alt="Studio office"
           className="w-full h-full object-cover"
         />
-        <div className="h-fit w-fit absolute bottom-32 left-16 flex flex-col gap-8">
+        <div className="h-fit w-fit absolute bottom-32 left-8 md:left-16 flex flex-col gap-8">
           <h1 className="text-white text-7xl font-md">
             Studio <br /> Broggini
           </h1>
@@ -181,15 +181,17 @@ export default function Landing() {
         </div>
       </section>
 
-      <section className="w-full h-[400px] relative">
+      <section className="w-full h-[600px] md:h-[400px] relative">
         <img
           src="/assets/images/fold.png"
           alt="Studio office"
           className="w-full h-full object-cover"
         />
-        <div className="h-fit w-fit absolute top-1/2 -translate-y-1/2 left-16 flex flex-col gap-8">
-          <h1 className="text-white text-7xl font-md">La nostra mission</h1>
-          <h2 className="text-white text-xl font-md md:max-w-[45%]">
+        <div className="h-fit w-fit absolute top-1/2 -translate-y-1/2 left-8 md:left-16 flex flex-col gap-8">
+          <h1 className="text-white text-6xl md:text-7xl font-md">
+            La nostra mission
+          </h1>
+          <h2 className="text-white text-xl font-md max-w-[300px] md:max-w-[45%]">
             Ci impegniamo ogni giorno per garantire ai nostri clienti
             l’attenzione e il tempo di cui hanno bisogno e per supportarli con
             professionalità, rapidità e flessibilità.

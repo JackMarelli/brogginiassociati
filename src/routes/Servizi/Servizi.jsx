@@ -112,11 +112,11 @@ export default function Servizi() {
           className="w-full h-full object-cover opacity-70"
         />
         <div className="absolute inset-0 bg-black opacity-30"></div>
-        <div className="absolute bottom-16 left-16 transform">
-          <h1 className="text-white text-6xl font-medium mb-6">
+        <div className="absolute bottom-16 left-8 md:left-16 transform">
+          <h1 className="text-white text-5xl md:text-6xl font-medium mb-6">
             I nostri servizi
           </h1>
-          <div className="max-w-2xl">
+          <div className="max-w-[300px] md:max-w-2xl">
             <p className="text-white text-lg">
               Il nostro studio è strutturato in aree professionali
               specialistiche che collaborano tra loro in maniera sinergica e

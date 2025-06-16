@@ -16,11 +16,11 @@ export default function Professionisti() {
           className="w-full h-full object-cover opacity-70"
         />
         <div className="absolute inset-0 bg-black opacity-30"></div>
-        <div className="absolute bottom-16 left-16 transform">
-          <h1 className="text-white text-6xl font-medium mb-6">
+        <div className="absolute bottom-16 left-8 md:left-16 transform">
+          <h1 className="text-white text-5xl md:text-6xl font-medium mb-6">
             I professionisti
           </h1>
-          <div className="max-w-2xl">
+          <div className="max-w-[300px] md:max-w-2xl">
             <p className="text-white text-lg">
               Guidiamo i nostri clienti verso la soluzione migliore con
               flessibilità ed efficienza, grazie a una solida esperienza e a
@@ -43,7 +43,7 @@ export default function Professionisti() {
             <Link
               to={`/professionisti/${socio.slug}`}
               key={socio.id}
-              className="flex flex-col w-80 group hover:opacity-90 transition-opacity"
+              className="flex flex-col w-full md:w-80 group hover:opacity-90 transition-opacity"
             >
               <div className="w-full aspect-square overflow-hidden rounded-lg bg-gray-200">
                 <img
@@ -67,7 +67,7 @@ export default function Professionisti() {
             <Link
               to={`/professionisti/${associato.slug}`}
               key={associato.id}
-              className="flex flex-col w-80 group hover:opacity-90 transition-opacity"
+              className="flex flex-col w-full md:w-80 group hover:opacity-90 transition-opacity"
             >
               <div className="w-full aspect-square overflow-hidden rounded-lg bg-gray-200">
                 <img
