@@ -11,7 +11,7 @@ export default function Professionisti() {
       {/* Hero Section */}
       <section className="w-full h-[80vh] relative bg-gray-900">
         <img
-          src="/assets/images/prof_fold.png"
+          src="/assets/images/webp/prof_fold.webp"
           alt="Studio meeting"
           className="w-full h-full object-cover opacity-70"
         />

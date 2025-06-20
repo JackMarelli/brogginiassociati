@@ -9,7 +9,7 @@ const serviziData = [
     title: "Consulenza aziendale e societaria",
     description:
       "Offriamo servizi di consulenza e assistenza societaria nell’ambito della gestione ordinaria e straordinaria, supportando le aziende con adeguati strumenti di controllo di gestione, budgeting & reporting.",
-    image: "/assets/images/consulenza_aziendale_societaria.png",
+    image: "/assets/images/webp/consulenza_aziendale_societaria.webp",
     imagePosition: "right",
     items: [
       "Costituzione di società e definizione degli aspetti statutari di governance",
@@ -26,7 +26,7 @@ const serviziData = [
     title: "Consulenza contabile e fiscale",
     description:
       "Forniamo consulenza e assistenza in ambito contabile e fiscale a professionisti, imprese di ogni dimensione e per procedure concorsuali.",
-    image: "/assets/images/consulenza_contabile_fiscale.png",
+    image: "/assets/images/webp/consulenza_contabile_fiscale.webp",
     imagePosition: "left",
     items: [
       "Servizi di consulenza in materia di imposte dirette, indirette e relativi adempimenti",
@@ -42,7 +42,7 @@ const serviziData = [
     title: "Contenzioso tributario",
     description:
       "Garantiamo consulenza e assistenza in sede di verifiche fiscali, accertamenti e contenziosi tributari, sia nelle fasi di pre-contenzioso (contraddittorio, accertamento con adesione, reclamo e mediazione tributaria) che nei diversi gradi di giudizio.",
-    image: "/assets/images/contenzioso_tributario.png",
+    image: "/assets/images/webp/contenzioso_tributario.webp",
     imagePosition: "right",
     items: [
       "Assistenza nell’ambito di verifiche fiscali da parte dell’Amministrazione Finanziaria",
@@ -55,7 +55,7 @@ const serviziData = [
     title: "Gestione delle crisi di impresa",
     description:
       "Grazie a consolidate competenze specialistiche nelle procedure di gestione delle crisi d’impresa, siamo in grado di assistere i nostri clienti nelle diverse fasi di ristrutturazione del debito, attraverso l’adozione degli strumenti previsti dalla vigente normativa.",
-    image: "/assets/images/gestione_crisi_impresa.png",
+    image: "/assets/images/webp/gestione_crisi_impresa.webp",
     imagePosition: "left",
     items: [
       "Piani attestati ex 67 l.f., accordi di ristrutturazione del debito ai sensi dell’art. 182 bis l.f., concordati preventivi in continuità o liquidatori ex artt. 161 l.f. e 186 l.f.",
@@ -107,7 +107,7 @@ export default function Servizi() {
       {/* Hero Section */}
       <section className="w-full h-[70vh] relative bg-gray-900">
         <img
-          src="/assets/images/servizi_fold.png"
+          src="/assets/images/webp/servizi_fold.webp"
           alt="Codice Tributario"
           className="w-full h-full object-cover opacity-70"
         />

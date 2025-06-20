@@ -9,7 +9,7 @@ const blogArticles = [
     id: "flat-tax-paperoni-residenza-italia",
     title: "Aumenta a 200.000 la Flat Tax per i 'Paperoni' che trasferiscono la residenza in Italia",
     excerpt: "Flat Tax raddoppiata a 200.000€ per i nuovi residenti esteri in Italia. Scopri chi può aderire e quali redditi sono agevolati. Consulenza fiscale personalizzata.",
-    image: "/assets/images/news1.png",
+    image: "/assets/images/webp/news1.webp",
     date: "16 Luglio 2024",
     categories: ["Novità legislative", "Tasse"],
     content: {

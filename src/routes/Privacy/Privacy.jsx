@@ -7,7 +7,7 @@ export default function Privacy() {
       <section className="w-full h-[20vh] md:h-[40vh] relative bg-gray-900">
           {/* Immagine di sfondo */}
           <img
-            src="/assets/images/servizi_fold.png"
+            src="/assets/images/webp/servizi_fold.webp"
             alt="Codice Tributario"
             className="w-full h-full object-cover opacity-70"
           />

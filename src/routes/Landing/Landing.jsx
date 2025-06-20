@@ -55,21 +55,21 @@ export default function Landing() {
         'Aumenta a 200.000 la Flat Tax per i "Paperoni" che trasferiscono la residenza in Italia',
       description:
         "Flat Tax raddoppiata a 200.000€ per i nuovi residenti esteri in Italia. Scopri chi può aderire e quali reqisiti...",
-      image: "/assets/images/news1.png",
+      image: "/assets/images/webp/news1.webp",
     },
     {
       title:
         'Aumenta a 200.000 la Flat Tax per i "Paperoni" che trasferiscono la residenza in Italia',
       description:
         "Flat Tax raddoppiata a 200.000€ per i nuovi residenti esteri in Italia. Scopri chi può aderire e quali reqisiti...",
-      image: "/assets/images/news2.png",
+      image: "/assets/images/webp/news1.webp",
     },
     {
       title:
         'Aumenta a 200.000 la Flat Tax per i "Paperoni" che trasferiscono la residenza in Italia',
       description:
         "Flat Tax raddoppiata a 200.000€ per i nuovi residenti esteri in Italia. Scopri chi può aderire e quali reqisiti...",
-      image: "/assets/images/news3.png",
+      image: "/assets/images/webp/news1.webp",
     },
   ];
 
@@ -77,7 +77,7 @@ export default function Landing() {
     <BaseLayout>
       <section className="w-full h-screen relative">
         <img
-          src="/assets/images/fold.png"
+          src="/assets/images/webp/fold.webp"
           alt="Studio office"
           className="w-full h-full object-cover"
         />
@@ -111,7 +111,7 @@ export default function Landing() {
               width="100%"
               height="100%"
               controls={true}
-              light="/assets/images/thumbnail.png"
+              light="/assets/images/webp/thumbnail.webp"
               playing={false}
             />
           </div>
@@ -183,7 +183,7 @@ export default function Landing() {
 
       <section className="w-full h-[600px] md:h-[400px] relative">
         <img
-          src="/assets/images/fold.png"
+          src="/assets/images/webp/fold.webp"
           alt="Studio office"
           className="w-full h-full object-cover"
         />

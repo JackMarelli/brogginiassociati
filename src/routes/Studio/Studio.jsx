@@ -47,7 +47,7 @@ export default function Studio() {
       {/* Hero Section */}
       <section className="w-full h-screen md:h-fit relative">
         <img
-          src="/assets/images/studio_fold.png"
+          src="/assets/images/webp/studio_fold.webp"
           alt="Studio office"
           className="w-full h-full object-cover"
         />
@@ -104,7 +104,7 @@ export default function Studio() {
           </div>
           <div className="hidden lg:block">
             <img
-              src="/assets/images/hand_pointing_books.png"
+              src="/assets/images/webp/hand_pointing_books.webp"
               alt="Studio library"
               className="w-full aspect-square object-cover rounded-lg shadow-lg"
             />

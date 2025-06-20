@@ -11,7 +11,7 @@ const complianceData = [
       "Lo Studio dott. Riccardo Broggini opera ed eroga i propri servizi in conformità alla norma ISO 9001, sistema di gestione della qualità certificato da ente terzo dal 2004.",
     image: "/assets/images/penna_elefante.jpg",
     imagePosition: "right",
-    badge: "/assets/images/iso9001.png",
+    badge: "/assets/images/webp/iso9001.webp",
     buttonText: "Leggi la nostra Politica per la Qualità",
   },
   {
@@ -19,9 +19,9 @@ const complianceData = [
     title: "Certificazione SR 10",
     description:
       "Dal 2023 lo Studio dott. Riccardo Broggini ha deciso di estendere il perimetro della certificazione allo standard IQNET SR10 per la responsabilità sociale.",
-    image: "/assets/images/gestione_crisi_impresa.png",
+    image: "/assets/images/webp/gestione_crisi_impresa.webp",
     imagePosition: "left",
-    badge: "/assets/images/sr10.png",
+    badge: "/assets/images/webp/sr10.webp",
     buttonText: "Scopri di più",
   },
   {
@@ -112,7 +112,7 @@ export default function Compliance() {
       {/* Hero Section */}
       <section className="w-full h-[70vh] relative bg-gray-900">
         <img
-          src="/assets/images/servizi_fold.png"
+          src="/assets/images/webp/servizi_fold.webp"
           alt="Compliance"
           className="w-full h-full object-cover opacity-70"
         />
