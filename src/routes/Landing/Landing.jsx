@@ -91,7 +91,9 @@ export default function Landing() {
             consulenza a contribuenti, professionisti e imprese in diversi
             ambiti.
           </h2>
-          <Button text="Leggi di più" />
+          <Button text="Leggi di più" onClick={() => {
+            navigate("/studio");
+          }}/>
         </div>
       </section>
 

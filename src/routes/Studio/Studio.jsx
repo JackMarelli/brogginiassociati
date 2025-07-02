@@ -7,8 +7,11 @@ import BaseLayout from "../../layouts/BaseLayout/BaseLayout";
 import Button from "../../components/Button/Button";
 
 import { Users, Scale, Sparkles, Landmark, Lightbulb } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function Studio() {
+  const navigate = useNavigate();
+
   const values = [
     {
       name: "Fiducia",
@@ -99,7 +102,12 @@ export default function Studio() {
               </p>
             </div>
             <div className="mt-8">
-              <Button text="Scopri i nostri professionisti" />
+              <Button
+                text="Scopri i nostri professionisti"
+                onClick={() => {
+                  navigate("/professionisti");
+                }}
+              />
             </div>
           </div>
           <div className="hidden lg:block">

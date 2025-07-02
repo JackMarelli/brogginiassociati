@@ -22,24 +22,24 @@ export default function Footer() {
             <h3 className="text-xl mb-4">Esplora</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link to="/" className="text-gray-300 hover:text-white">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link to="/studio" className="text-gray-300 hover:text-white">
                   Lo studio
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link to="/professionisti" className="text-gray-300 hover:text-white">
                   I professionisti
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link to="/servizi" className="text-gray-300 hover:text-white">
                   I nostri servizi
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -49,14 +49,14 @@ export default function Footer() {
             <h3 className="text-xl mb-4">Altre pagine</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link to="/compliance" className="text-gray-300 hover:text-white">
                   Compliance
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link to="/blog" className="text-gray-300 hover:text-white">
                   Blog & News
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -68,7 +68,12 @@ export default function Footer() {
               <li className="text-gray-300">Varese - Via Dandolo 5</li>
               <li className="text-gray-300">Busto A. - Via Marsala 20</li>
               <li className="mt-2">
-                <a href="#" className="text-gray-300 hover:text-white">
+                <a
+                  href="https://www.linkedin.com/company/brogginiassociati" // suggested
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white"
+                >
                   LinkedIn
                 </a>
               </li>
@@ -91,9 +96,7 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">©Copyright 2025</p>
           <Link to="/privacy">
-            <p oncli className="text-gray-400 text-sm">
-              Privacy Policy
-            </p>
+            <p className="text-gray-400 text-sm">Privacy Policy</p>
           </Link>
         </div>
       </div>

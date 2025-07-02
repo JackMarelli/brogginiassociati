@@ -9,7 +9,7 @@ const complianceData = [
     title: "Certificazione ISO 9001",
     description:
       "Lo Studio dott. Riccardo Broggini opera ed eroga i propri servizi in conformità alla norma ISO 9001, sistema di gestione della qualità certificato da ente terzo dal 2004.",
-    image: "/assets/images/penna_elefante.jpg",
+    image: "/assets/images/webp/penna_elefante.webp",
     imagePosition: "right",
     badge: "/assets/images/webp/iso9001.webp",
     buttonText: "Leggi la nostra Politica per la Qualità",
@@ -56,7 +56,7 @@ const complianceData = [
     title: "Whistleblowing - Segnalazione molestie",
     description:
       "Lo Studio ha attivato un sistema di gestione delle segnalazioni per condotte illecite o non etiche, a tutela dell’organizzazione e dei dipendenti. È possibile effettuare le segnalazioni in modo responsabile, seguendo le procedure aziendali.",
-    image: "/assets/images/webp/Occhiali.webp",
+    image: "/assets/images/webp/whistleblowing.webp",
     imagePosition: "left",
     buttonText: "Invia una segnalazione",
   },
