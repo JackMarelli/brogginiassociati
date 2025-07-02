@@ -29,7 +29,7 @@ const complianceData = [
     title: "Politica per la qualità e la responsabilità sociale d’impresa",
     description:
       "Lo Studio dott. Riccardo Broggini intende mantenere e migliorare la posizione di rilievo di cui gode attualmente nel settore nel quale opera, impegnandosi ad utilizzare il Sistema Qualità come strumento quotidiano per creare valore per i clienti e per i collaboratori.",
-    image: "/assets/images/vetrata.jpg",
+    image: "/assets/images/webp/vetrata.webp",
     imagePosition: "right",
     buttonText: "Leggi la Politica per la Qualità",
   },
@@ -38,7 +38,7 @@ const complianceData = [
     title: "Parità di genere",
     description:
       "Lo Studio da sempre crede nell’importanza di valorizzare le proprie risorse come elemento fondamentale per il raggiungimento degli obiettivi. Nel 2024 ha conseguito la certificazione UNI PDR 125. Ha intrapreso un percorso orientato a garantire pari dignità e pari opportunità per tutti i dipendenti e collaboratori, promuovendo politiche di gestione delle differenze e tutela della maternità e paternità, indipendentemente da provenienza, cultura, religione, genere, orientamento sessuale, opinioni politiche o altre caratteristiche personali.",
-    image: "/assets/images/parita.JPG",
+    image: "/assets/images/webp/parita.webp",
     imagePosition: "left",
     buttonText: "Leggi la Politica per la Parità di Genere",
   },
@@ -47,7 +47,7 @@ const complianceData = [
     title: "Codice etico",
     description:
       "Il Codice Etico rappresenta la guida ai valori e ai principi di comportamento condivisi dallo Studio: regole chiare di trasparenza e responsabilità per tutti i collaboratori e dipendenti, a tutela dell’integrità e della reputazione dello Studio.",
-    image: "/assets/images/libri.jpg",
+    image: "/assets/images/webp/libri.webp",
     imagePosition: "right",
     buttonText: "Leggi il nostro Codice Etico",
   },
@@ -56,7 +56,7 @@ const complianceData = [
     title: "Whistleblowing - Segnalazione molestie",
     description:
       "Lo Studio ha attivato un sistema di gestione delle segnalazioni per condotte illecite o non etiche, a tutela dell’organizzazione e dei dipendenti. È possibile effettuare le segnalazioni in modo responsabile, seguendo le procedure aziendali.",
-    image: "/assets/images/Occhiali.jpg",
+    image: "/assets/images/webp/Occhiali.webp",
     imagePosition: "left",
     buttonText: "Invia una segnalazione",
   },
@@ -119,7 +119,7 @@ export default function Compliance() {
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="absolute bottom-16 left-8 md:left-16 transform">
           <h1 className="text-white text-5xl md:text-6xl font-medium mb-6">Compliance</h1>
-          <div className="max-w-[300px] max-w-2xl">
+          <div className="max-w-[300px] md:max-w-3xl">
             <p className="text-white text-lg">
               Consapevoli che il principale fattore di successo di ogni impresa
               è costituito dalle risorse umane, lo Studio Dott. Riccardo

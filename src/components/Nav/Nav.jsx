@@ -46,9 +46,7 @@ export default function Nav() {
   }, [isMenuOpen]);
 
   return (
-    <header
-      className="fixed top-0 left-0 right-0 w-full bg-white z-40 flex flex-row justify-between items-center px-6 lg:px-16 py-4 shadow-md"
-    >
+    <header className="fixed top-0 left-0 right-0 w-full bg-white z-40 flex flex-row justify-between items-center px-6 lg:px-16 py-4 shadow-md">
       <Link to="/">
         <img
           className="w-12 lg:w-16 aspect-square"
@@ -59,15 +57,36 @@ export default function Nav() {
 
       {/* Desktop Navigation */}
       <div className="hidden lg:flex gap-8">
-        <NavOption text="Lo Studio" to="studio" currentPath={location.pathname}/>
-        <NavOption text="I Professionisti" to="professionisti" currentPath={location.pathname}/>
-        <NavOption text="Servizi" to="servizi" currentPath={location.pathname}/>
-        <NavOption text="Compliance" to="compliance" currentPath={location.pathname}/>
-        <NavOption text="Blog" to="blog" currentPath={location.pathname}/>
+        <NavOption
+          text="Lo Studio"
+          to="studio"
+          currentPath={location.pathname}
+        />
+        <NavOption
+          text="I Professionisti"
+          to="professionisti"
+          currentPath={location.pathname}
+        />
+        <NavOption
+          text="Servizi"
+          to="servizi"
+          currentPath={location.pathname}
+        />
+        <NavOption
+          text="Compliance"
+          to="compliance"
+          currentPath={location.pathname}
+        />
+        <NavOption text="Blog" to="blog" currentPath={location.pathname} />
       </div>
 
       <div className="hidden lg:block">
-        <Button text="Contattaci" />
+        <Button
+          text="Contattaci"
+          onClick={() => {
+            window.scrollTo(0, 9999);
+          }}
+        />
       </div>
 
       {/* Mobile Menu Button */}
