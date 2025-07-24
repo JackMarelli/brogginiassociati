@@ -1,5 +1,6 @@
 import React from "react";
 import BaseLayout from "../../layouts/BaseLayout/BaseLayout";
+import FoldSection from "../../components/FoldSection/FoldSection";
 import PropTypes from "prop-types";
 
 // Service data structure
@@ -68,7 +69,7 @@ const serviziData = [
 // Reusable Service Row Component
 const ServiceRow = ({ title, description, image, imagePosition, items }) => {
   return (
-    <section className="py-16 px-8 md:px-16">
+    <section className="py-16 px-8">
       <div
         className={`flex flex-col ${
           imagePosition === "right" ? "lg:flex-row" : "lg:flex-row-reverse"
@@ -105,28 +106,14 @@ export default function Servizi() {
   return (
     <BaseLayout>
       {/* Hero Section */}
-      <section className="w-full h-[70vh] relative bg-gray-900">
-        <img
-          src="/assets/images/webp/servizi_fold.webp"
-          alt="Codice Tributario"
-          className="w-full h-full object-cover opacity-70"
-        />
-        <div className="absolute inset-0 bg-black opacity-30"></div>
-        <div className="absolute bottom-16 left-8 md:left-16 transform">
-          <h1 className="text-white text-5xl md:text-6xl font-medium mb-6">
-            I nostri servizi
-          </h1>
-          <div className="max-w-[300px] md:max-w-2xl">
-            <p className="text-white text-lg">
-              Il nostro studio è strutturato in aree professionali
-              specialistiche che collaborano tra loro in maniera sinergica e
-              integrata, al fine di garantire, oltre alle competenze più
-              qualificate, elevata flessibilità e tempestività nella risposta al
-              cliente.
-            </p>
-          </div>
-        </div>
-      </section>
+      <FoldSection
+        title="I nostri servizi"
+        text="Il nostro studio è strutturato in aree professionali specialistiche che collaborano tra loro in maniera sinergica e integrata, al fine di garantire, oltre alle competenze più qualificate, elevata flessibilità e tempestività nella risposta al cliente."
+        image="/assets/images/webp/servizi_fold.webp"
+        height="h-[80vh]"
+        overlay={true}
+        textMaxWidth="md:max-w-2xl"
+      />
 
       {/* Service Sections */}
       {serviziData.map((servizio, index) => (

@@ -46,10 +46,10 @@ export default function Nav() {
   }, [isMenuOpen]);
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full bg-white z-40 flex flex-row justify-between items-center px-6 lg:px-16 py-4 shadow-md">
+    <header className="fixed top-0 left-0 right-0 w-full bg-white z-40 flex flex-row justify-between items-center px-6 lg:px-8 py-3">
       <Link to="/">
         <img
-          className="w-12 lg:w-16 aspect-square"
+          className="w-12 aspect-square"
           src="/assets/logo/black.png"
           alt="Logo di Broggini Associati"
         />
@@ -57,6 +57,11 @@ export default function Nav() {
 
       {/* Desktop Navigation */}
       <div className="hidden lg:flex gap-8">
+        <NavOption
+          text="Home"
+          to=""
+          currentPath={location.pathname}
+        />
         <NavOption
           text="Lo Studio"
           to="studio"
@@ -77,7 +82,7 @@ export default function Nav() {
           to="compliance"
           currentPath={location.pathname}
         />
-        <NavOption text="Blog" to="blog" currentPath={location.pathname} />
+        <NavOption text="Circolari" to="circolari" currentPath={location.pathname} />
       </div>
 
       <div className="hidden lg:block">

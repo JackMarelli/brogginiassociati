@@ -1,24 +1,28 @@
-import { useNavigate } from "react-router-dom";
+import React from "react";
+import { ArrowUpRight } from "lucide-react"; // Usa Lucide Icons
 
-export default function NewsCard({ title, description, image, to="/" }) {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate(to);
-  }
-
+export default function NewsCard({ title, description, to = "#", date }) {
   return (
-    <div onClick={handleClick} className="col-span-12 md:col-span-4 flex flex-col bg-white overflow-hidden cursor-pointer">
-      {image && (
-        <div className="w-full bg-gray-200 rounded-lg aspect-video overflow-hidden">
-          <img src={image} alt={title} className="w-full h-full object-cover" />
-        </div>
-      )}
-
-      <div className="my-4">
-        <h3 className="text-xl font-medium mb-2">{title}</h3>
-        <p className="text-gray-600 text-sm">{description}</p>
+    <a
+      href={to}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="col-span-full bg-gray-100 rounded-lg px-6 py-4 transition-all duration-200 flex flex-col md:flex-row justify-between group"
+    >
+      <div className="flex flex-col">
+        <p className="text-xs text-gray-500 mb-1">{date}</p>
+        <h3 className="text-lg font-medium flex items-center gap-2 mb-1">
+          {title}
+          <ArrowUpRight
+            size={16}
+            className="transition-transform duration-200 group-hover:translate-x-1"
+          />
+        </h3>
+        <p className="text-sm text-gray-600">{description}</p>
       </div>
-    </div>
+      <div className="flex-shrink-0 self-start md:self-center text-xs text-black bg-white px-2 py-1 rounded h-fit">
+        PDF
+      </div>
+    </a>
   );
 }

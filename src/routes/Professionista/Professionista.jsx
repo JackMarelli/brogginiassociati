@@ -42,7 +42,7 @@ export default function Professionista() {
 
   return (
     <BaseLayout>
-      <div className="container mx-auto py-12 px-4 md:px-16">
+      <div className="container mx-auto py-32 px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Image Column */}
           <div className="h-full">

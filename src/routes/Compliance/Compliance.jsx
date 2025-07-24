@@ -1,6 +1,7 @@
 import React from "react";
 import BaseLayout from "../../layouts/BaseLayout/BaseLayout";
 import Button from "../../components/Button/Button";
+import FoldSection from "../../components/FoldSection/FoldSection";
 
 // Compliance services data structure
 const complianceData = [
@@ -71,7 +72,7 @@ const ComplianceRow = ({
   button, // now expecting a JSX element (optional)
 }) => {
   return (
-    <section className="py-12 px-8 md:px-16">
+    <section className="py-12 px-8">
       <div
         className={`h-fit flex flex-col ${
           imagePosition === "right" ? "lg:flex-row" : "lg:flex-row-reverse"
@@ -110,28 +111,14 @@ export default function Compliance() {
   return (
     <BaseLayout>
       {/* Hero Section */}
-      <section className="w-full h-[70vh] relative bg-gray-900">
-        <img
-          src="/assets/images/webp/servizi_fold.webp"
-          alt="Compliance"
-          className="w-full h-full object-cover opacity-70"
-        />
-        <div className="absolute inset-0 bg-black opacity-30"></div>
-        <div className="absolute bottom-16 left-8 md:left-16 transform">
-          <h1 className="text-white text-5xl md:text-6xl font-medium mb-6">Compliance</h1>
-          <div className="max-w-[300px] md:max-w-3xl">
-            <p className="text-white text-lg">
-              Consapevoli che il principale fattore di successo di ogni impresa
-              è costituito dalle risorse umane, lo Studio Dott. Riccardo
-              Broggini promuove il coinvolgimento del personale nel
-              raggiungimento degli obiettivi strategici aziendali e sostiene lo
-              sviluppo di un ambiente di lavoro caratterizzato da lealtà,
-              fiducia reciproca e collaborazione, valorizzando le competenze
-              professionali attraverso attività di formazione e crescita.
-            </p>
-          </div>
-        </div>
-      </section>
+      <FoldSection
+        title="Compliance"
+        text="Consapevoli che il principale fattore di successo di ogni impresa è costituito dalle risorse umane, lo Studio Dott. Riccardo Broggini promuove il coinvolgimento del personale nel raggiungimento degli obiettivi strategici aziendali e sostiene lo sviluppo di un ambiente di lavoro caratterizzato da lealtà, fiducia reciproca e collaborazione, valorizzando le competenze professionali attraverso attività di formazione e crescita."
+        image="/assets/images/webp/servizi_fold.webp"
+        height="h-[80vh]"
+        overlay={true}
+        textMaxWidth="md:max-w-3xl"
+      />
 
       {/* Compliance Sections */}
       {complianceData.map((item, index) => (
@@ -147,7 +134,10 @@ export default function Compliance() {
                 <Button
                   text="Leggi il nostro Codice Etico"
                   onClick={() =>
-                    window.open("/assets/documents/codice_etico_rev1.pdf", "_blank")
+                    window.open(
+                      "/assets/documents/codice_etico_rev1.pdf",
+                      "_blank"
+                    )
                   }
                 />
               ) : null

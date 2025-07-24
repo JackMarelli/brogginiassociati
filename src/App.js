@@ -18,8 +18,8 @@ const router = createBrowserRouter([
   { path: "/professionisti", element: <Professionisti /> },
   { path: "/professionisti/:slug", element: <Professionista /> },
   { path: "/compliance", element: <Compliance /> },
-  { path: "/blog", element: <Blog /> },
-  { path: "/blog/:article", element: <Blog /> },
+  { path: "/circolari", element: <Blog /> },
+  { path: "/circolari/:article", element: <Blog /> },
   { path: "/privacy", element: <Privacy /> },
 ]);
 

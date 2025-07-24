@@ -11,7 +11,7 @@ export default function BaseLayout({ children }) {
   }, [pathname]);
 
   return (
-    <div className="flex flex-col w-full min-h-screen overflow-x-hidden pt-20 md:pt-24">
+    <div className="flex flex-col w-full min-h-screen overflow-x-hidden">
       <Nav />
       <main className="w-full">
         {children}

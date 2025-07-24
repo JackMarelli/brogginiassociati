@@ -3,7 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout/BaseLayout";
 import Button from "../../components/Button/Button";
 import ServiceCard from "../../components/ServiceCard/ServiceCard.jsx";
 import NewsCard from "../../components/NewsCard/NewsCard.jsx";
-import Footer from "../../components/Footer/Footer";
+import FoldSection from "../../components/FoldSection/FoldSection.jsx";
 import ReactPlayer from "react-player";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -75,36 +75,23 @@ export default function Landing() {
 
   return (
     <BaseLayout>
-      <section className="w-full h-screen relative">
-        <img
-          src="/assets/images/webp/fold.webp"
-          alt="Studio office"
-          className="w-full h-full object-cover"
-        />
-        <div className="h-fit w-fit absolute bottom-32 left-8 md:left-16 flex flex-col gap-8">
-          <h1 className="text-white text-7xl font-md">
-            Studio <br /> Broggini
-          </h1>
-          <h2 className="text-white text-xl font-md md:max-w-[35%]">
-            Con oltre 40 anni di esperienza e professionalità, lo Studio Dott.
-            Riccardo Broggini - Dottori Commercialisti Associati offre servizi e
-            consulenza a contribuenti, professionisti e imprese in diversi
-            ambiti.
-          </h2>
-          <Button text="Leggi di più" onClick={() => {
-            navigate("/studio");
-          }}/>
-        </div>
-      </section>
+      <FoldSection
+        title="Studio Broggini"
+        text="Con oltre 50 anni di esperienza e professionalità, lo Studio Dott. Riccardo Broggini - Dottori Commercialisti Associati offre servizi e consulenza a contribuenti, professionisti e imprese in diversi ambiti."
+        image="/assets/images/webp/fold.webp"
+        buttonText="Leggi di più"
+        buttonLink="/studio"
+      />
 
       <section className="flex flex-col items-center bg-white py-20 px-8 md:px-32 lg:px-64">
-        <h2 className="text-5xl md:text-7xl font-medium text-center mb-12">
+        <h2 className="text-5xl md:text-6xl font-semibold text-center mb-8">
           I nostri obiettivi, <br /> da 50 anni
         </h2>
-        <p className="text-2xl font-medium text-center max-w-4xl mb-12">
-          Costruire con cura un rapporto di fiducia duraturo tra il cliente e il
-          professionista, offrendo al contempo competenze diversificate e
-          specializzazioni complementari per rispondere ad ogni esigenza.
+        <p className="text-xl font-sm text-center max-w-3xl mb-12">
+          Costruire con <span className="italic">cura</span> un rapporto di
+          fiducia duraturo tra il cliente e il professionista, offrendo al
+          contempo competenze diversificate e specializzazioni complementari per
+          rispondere ad ogni esigenza.
         </p>
         <div className="w-full max-w-4xl mx-auto mb-20">
           <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
@@ -125,10 +112,10 @@ export default function Landing() {
 
       <section className="bg-white py-16">
         <div className="container mx-auto px-6">
-          <h2 className="text-6xl font-medium mb-6 text-center">
+          <h2 className="text-5xl font-medium mb-6 text-center">
             Le nostre competenze
           </h2>
-          <p className="text-center text-xl mb-20 max-w-3xl mx-auto">
+          <p className="text-center text-lg mb-16 max-w-xl mx-auto">
             Siamo un team di professionisti con competenze specialistiche che
             guidano il cliente nelle diverse aree di attività
           </p>
@@ -168,15 +155,15 @@ export default function Landing() {
         </div>
       </section>
 
-      <section className="py-20 px-8 md:px-16">
-        <h2 className="text-5xl md:text-7xl font-medium text-center mb-8">
+      <section className="py-20 px-8">
+        <h2 className="text-5xl md:text-5xl font-medium text-center mb-6">
           Rimani aggiornato
         </h2>
-        <p className="text-center text-xl font-medium mb-12">
+        <p className="text-center text-lg mb-12">
           Stai sempre aggiornato con le ultime circolari redatte dal nostro
           studio
         </p>
-        <div className="grid grid-cols-12 gap-8">
+        <div className="grid grid-cols-12 gap-4">
           {newsItems.map((news, index) => (
             <NewsCard key={index} {...news} />
           ))}
@@ -189,11 +176,11 @@ export default function Landing() {
           alt="Studio office"
           className="w-full h-full object-cover"
         />
-        <div className="h-fit w-fit absolute top-1/2 -translate-y-1/2 left-8 md:left-16 flex flex-col gap-8">
-          <h1 className="text-white text-6xl md:text-7xl font-md">
+        <div className="h-fit w-fit absolute top-1/2 -translate-y-1/2 left-8 md:left-16 flex flex-col gap-6">
+          <h1 className="text-white text-6xl md:text-4xl font-md">
             La nostra mission
           </h1>
-          <h2 className="text-white text-xl font-md max-w-[300px] md:max-w-[45%]">
+          <h2 className="text-white text-md max-w-[300px] md:max-w-[45%]">
             Ci impegniamo ogni giorno per garantire ai nostri clienti
             l’attenzione e il tempo di cui hanno bisogno e per supportarli con
             professionalità, rapidità e flessibilità.

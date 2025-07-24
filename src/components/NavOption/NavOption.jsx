@@ -1,6 +1,6 @@
 import { useNavigate, useLocation } from "react-router-dom";
 
-export default function Button({ text = "Option", to = "" }) {
+export default function NavOption({ text = "Option", to = "" }) {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -8,13 +8,16 @@ export default function Button({ text = "Option", to = "" }) {
     navigate(`/${to}`);
   };
 
-  const isActive = location.pathname.startsWith(`/${to}`);
+  const isActive =
+    to === ""
+      ? location.pathname === "/"
+      : location.pathname.startsWith(`/${to}`);
 
   return (
     <span
       onClick={handleClick}
-      className={`w-fit cursor-pointer transition-colors duration-200 ${
-        isActive ? "text-black" : "text-gray-300 hover:text-gray-600"
+      className={`w-fit text-sm font-normal cursor-pointer transition-colors duration-200 ${
+        isActive ? "text-black" : "text-gray-400 hover:text-gray-700"
       }`}
     >
       {text}

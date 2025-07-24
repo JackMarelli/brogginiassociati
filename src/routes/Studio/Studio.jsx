@@ -5,6 +5,7 @@ import "swiper/css/pagination";
 import ValueCard from "../../components/ValueCard/ValueCard";
 import BaseLayout from "../../layouts/BaseLayout/BaseLayout";
 import Button from "../../components/Button/Button";
+import FoldSection from "../../components/FoldSection/FoldSection";
 
 import { Users, Scale, Sparkles, Landmark, Lightbulb } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -48,51 +49,38 @@ export default function Studio() {
   return (
     <BaseLayout>
       {/* Hero Section */}
-      <section className="w-full h-screen md:h-fit relative">
-        <img
-          src="/assets/images/webp/studio_fold.webp"
-          alt="Studio office"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-end text-center px-4 py-20">
-          <h1 className="text-white text-5xl md:text-7xl xl:text-7xl font-medium mb-12">
-            Una tradizione
-            <br />
-            che si rinnova
-          </h1>
-          <p className="text-white text-lg md:text-2xl max-w-3xl">
-            Costruire e coltivare con dedizione un autentico rapporto di fiducia
-            tra il cliente e il suo professionista di riferimento, un legame che
-            ha.
-          </p>
-        </div>
-      </section>
+      <FoldSection
+        title={"Una tradizione\nche si rinnova"}
+        text="Costruire e coltivare con dedizione un autentico rapporto di fiducia tra il cliente e il suo professionista di riferimento, un legame che ha."
+        image="/assets/images/webp/studio_fold.webp"
+        centered={true}
+        height="h-[80vh]"
+        textMaxWidth="max-w-2xl"
+      />
 
       {/* About Studio Section */}
-      <section className="py-20 px-8 md:px-16 lg:px-24">
+      <section className="py-20 px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col gap-6">
-            <h2 className="text-4xl md:text-5xl font-medium mb-8">
+            <h2 className="text-4xl md:text-4xl font-medium mb-8">
               Studio Dott.
               <br />
               Riccardo Broggini
             </h2>
-            <div className="space-y-6 text-xl">
+            <div className="space-y-4 text-md">
               <p>
                 Nato all'inizio degli anni '70 per volontà di Riccardo Broggini,
                 lo Studio Dott. Riccardo Broggini - Dottori Commercialisti
-                Associati ha assunto la forma di studio associato nel 2001.
+                Associati ha assunto la forma di studio associato nel 2001. Nel
+                corso degli anni, abbiamo acquisito al nostro interno competenze
+                professionali sempre più specializzate per garantire una
+                consulenza e un servizio al passo coi tempi.
               </p>
               <p>
-                Nel corso degli anni, abbiamo acquisito al nostro interno
-                competenze professionali sempre più specializzate per garantire
-                una consulenza e un servizio al passo coi tempi.
-              </p>
-              <p>
-                Da oltre 40 anni assistiamo i nostri clienti, piccoli o grandi
-                che siano, con competenza e dedizione curando e valorizzando
-                anche il benessere dei nostri collaboratori e la comunità in cui
-                viviamo.
+                Da oltre 50 anni assistiamo i nostri clienti, piccoli o grandi
+                che siano, con competenza e dedizione <span className="italic font-semibold">curando</span> e
+                valorizzando anche il benessere dei nostri collaboratori e la
+                comunità in cui viviamo.
               </p>
               <p>
                 Crediamo nella collaborazione tra i diversi attori presenti nei
@@ -103,7 +91,7 @@ export default function Studio() {
             </div>
             <div className="mt-8">
               <Button
-                text="Scopri i nostri professionisti"
+                text="Conosci i professionisti"
                 onClick={() => {
                   navigate("/professionisti");
                 }}
@@ -122,7 +110,7 @@ export default function Studio() {
 
       {/* Values Section */}
       <section className="py-20 px-8 md:px-16 lg:px-24">
-        <h2 className="text-4xl md:text-5xl font-medium text-center mb-16">
+        <h2 className="text-xl md:text-4xl font-medium text-center mb-12">
           I nostri valori
         </h2>
 
@@ -130,7 +118,7 @@ export default function Studio() {
           {values.map((value, index) => (
             <div
               key={index}
-              className={`col-span-4 ${index == 3 ? "col-start-3" : ""}`}
+              className={`col-span-4 ${index === 3 ? "col-start-3" : ""}`}
             >
               <ValueCard
                 name={value.name}

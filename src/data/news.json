@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Flat Tax a 200.000€ per i nuovi residenti in Italia",
+    "description": "Flat Tax raddoppiata per i nuovi residenti. Scopri chi può aderire e quali redditi sono agevolati.",
+    "date": "2024-07-16",
+    "cover": "/assets/images/webp/news1.webp",
+    "file": "/pdf/flat-tax-paperoni-residenza-italia.pdf"
+  },
+  {
+    "title": "Novità IRAP per liberi professionisti",
+    "description": "Dal 2025 cambiano le soglie IRAP per le attività individuali. Tutto quello che devi sapere.",
+    "date": "2024-06-10",
+    "cover": "/assets/images/webp/news1.webp",
+    "file": "/pdf/irap-professionisti-2025.pdf"
+  },
+  {
+    "title": "Riforma fiscale 2024: i punti chiave",
+    "description": "Le novità più rilevanti della riforma fiscale approvata dal Governo.",
+    "date": "2024-05-02",
+    "cover": "/assets/images/webp/news1.webp",
+    "file": "/pdf/riforma-fiscale-2024.pdf"
+  },
+  {
+    "title": "Detrazione spese mediche 2023: novità e limiti",
+    "description": "Guida completa alle detrazioni per spese sanitarie nel 730/2023.",
+    "date": "2023-11-12",
+    "cover": "/assets/images/webp/news1.webp",
+    "file": "/pdf/detrazioni-mediche-2023.pdf"
+  },
+  {
+    "title": "Contributi INPS forfettari: cosa cambia nel 2023",
+    "description": "Modifiche ai contributi per chi è in regime forfettario: soglie e aliquote.",
+    "date": "2023-06-18",
+    "cover": "/assets/images/webp/news1.webp",
+    "file": "/pdf/inps-forfettari-2023.pdf"
+  },
+  {
+    "title": "Bonus casa 110%: proroghe e novità 2022",
+    "description": "Aggiornamento sulla proroga del Superbonus e cambiamenti normativi.",
+    "date": "2022-09-30",
+    "cover": "/assets/images/webp/news1.webp",
+    "file": "/pdf/superbonus-110-2022.pdf"
+  },
+  {
+    "title": "Nuovo limite contante 2022: cosa cambia",
+    "description": "Il tetto all'uso del contante è stato abbassato. Ecco i nuovi limiti e le sanzioni.",
+    "date": "2022-01-15",
+    "cover": "/assets/images/webp/news1.webp",
+    "file": "/pdf/limite-contante-2022.pdf"
+  },
+  {
+    "title": "Fattura elettronica 2021: obblighi e scadenze",
+    "description": "Tutti gli aggiornamenti sull'uso obbligatorio della fattura elettronica.",
+    "date": "2021-10-05",
+    "cover": "/assets/images/webp/news1.webp",
+    "file": "/pdf/fattura-elettronica-2021.pdf"
+  }
+]

@@ -5,7 +5,7 @@ export default function Button({
   return (
     <div
       onClick={onClick}
-      className="w-fit h-fit rounded-lg bg-accent text-white cursor-pointer px-5 py-3"
+      className="w-fit h-fit rounded-lg bg-accent text-sm text-white cursor-pointer px-4 py-3"
     >
       {text}
     </div>

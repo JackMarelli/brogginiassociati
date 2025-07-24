@@ -4,8 +4,8 @@ export default function ValueCard({ name, description, icon: Icon }) {
       <div className="mb-4 text-gray-800">
         <Icon size={20} className="m-1" />
       </div>
-      <h3 className="text-4xl font-medium mb-4">{name}</h3>
-      <p className="text-gray-600 text-xl">{description}</p>
+      <h3 className="text-2xl font-medium mb-4">{name}</h3>
+      <p className="text-gray-600 text-sm">{description}</p>
     </div>
   );
 }
