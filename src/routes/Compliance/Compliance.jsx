@@ -72,7 +72,7 @@ const ComplianceRow = ({
   button, // now expecting a JSX element (optional)
 }) => {
   return (
-    <section className="py-12 px-8">
+    <section className="py-12 px-8 leading-tight">
       <div
         className={`h-fit flex flex-col ${
           imagePosition === "right" ? "lg:flex-row" : "lg:flex-row-reverse"
@@ -80,8 +80,8 @@ const ComplianceRow = ({
       >
         <div className="lg:w-1/2 grow h-full flex flex-col justify-between">
           <div>
-            <h2 className="text-2xl font-medium mb-4">{title}</h2>
-            <p className="mb-6">{description}</p>
+            <h2 className="text-2xl 2xl:text-5xl font-medium mb-4 2xl:mb-8">{title}</h2>
+            <p className="mb-6 2xl:text-xl">{description}</p>
             {badge && (
               <div className="my-4">
                 <img
@@ -115,7 +115,7 @@ export default function Compliance() {
         title="Compliance"
         text="Consapevoli che il principale fattore di successo di ogni impresa è costituito dalle risorse umane, lo Studio Dott. Riccardo Broggini promuove il coinvolgimento del personale nel raggiungimento degli obiettivi strategici aziendali e sostiene lo sviluppo di un ambiente di lavoro caratterizzato da lealtà, fiducia reciproca e collaborazione, valorizzando le competenze professionali attraverso attività di formazione e crescita."
         image="/assets/images/webp/servizi_fold.webp"
-        height="h-[80vh]"
+        height="h-[85vh]"
         overlay={true}
         textMaxWidth="md:max-w-3xl"
       />

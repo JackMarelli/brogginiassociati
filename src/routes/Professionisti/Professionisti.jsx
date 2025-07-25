@@ -13,7 +13,7 @@ export default function Professionisti() {
         title="I professionisti"
         text="Guidiamo i nostri clienti verso la soluzione migliore con flessibilità ed efficienza, grazie a una solida esperienza e a competenze tecniche specifiche, sempre aggiornate. Il nostro team è in grado di affrontare e gestire problematiche altamente complesse e di farsi carico di ogni questione che preoccupa chi fa impresa."
         image="/assets/images/webp/prof_fold.webp"
-        height="h-[90vh]"
+        height="h-[85vh]"
         overlay={true}
         textMaxWidth="md:max-w-xl"
       />

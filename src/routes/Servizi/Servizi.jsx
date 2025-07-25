@@ -69,14 +69,14 @@ const serviziData = [
 // Reusable Service Row Component
 const ServiceRow = ({ title, description, image, imagePosition, items }) => {
   return (
-    <section className="py-16 px-8">
+    <section className="py-16 px-8 leading-tight">
       <div
         className={`flex flex-col ${
           imagePosition === "right" ? "lg:flex-row" : "lg:flex-row-reverse"
         } items-center gap-8`}
       >
-        <div className="lg:w-1/2">
-          <h2 className="text-4xl font-medium mb-6">{title}</h2>
+        <div className="lg:w-1/2 2xl:text-lg">
+          <h2 className="text-4xl 2xl:text-5xl font-medium mb-6">{title}</h2>
           <p className="mb-4">{description}</p>
           <p className="font-medium mt-6 mb-2">In particolare:</p>
           <ul className="list-disc pl-6 space-y-2">
@@ -110,7 +110,7 @@ export default function Servizi() {
         title="I nostri servizi"
         text="Il nostro studio è strutturato in aree professionali specialistiche che collaborano tra loro in maniera sinergica e integrata, al fine di garantire, oltre alle competenze più qualificate, elevata flessibilità e tempestività nella risposta al cliente."
         image="/assets/images/webp/servizi_fold.webp"
-        height="h-[80vh]"
+        height="h-[85vh]"
         overlay={true}
         textMaxWidth="md:max-w-2xl"
       />

@@ -46,10 +46,11 @@ export default function Circolari() {
               alt={latest.title}
               className="w-full h-full object-cover"
             />
-            <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+            <div className="absolute bottom-0 left-0 right-0 p-8 text-white xl:text-center z-20">
               <h2 className="text-3xl font-medium mb-2">{latest.title}</h2>
               <p className="text-md text-gray-100">{latest.description}</p>
             </div>
+            <div className="absolute top-0 right-o bottom-0 left-0 w-full h-full bg-gradient-to-t from-accent to-transparent z-10"></div>
           </div>
         </a>
       </section>

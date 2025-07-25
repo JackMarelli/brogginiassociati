@@ -81,6 +81,7 @@ export default function Landing() {
         image="/assets/images/webp/fold.webp"
         buttonText="Leggi di più"
         buttonLink="/studio"
+        gradientDirection="tl"
       />
 
       <section className="flex flex-col items-center bg-white py-20 px-8 md:px-32 lg:px-64">

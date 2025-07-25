@@ -54,7 +54,7 @@ export default function Studio() {
         text="Costruire e coltivare con dedizione un autentico rapporto di fiducia tra il cliente e il suo professionista di riferimento, un legame che ha."
         image="/assets/images/webp/studio_fold.webp"
         centered={true}
-        height="h-[80vh]"
+        height="h-[90vh]"
         textMaxWidth="max-w-2xl"
       />
 

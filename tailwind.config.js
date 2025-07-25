@@ -4,6 +4,9 @@ module.exports = {
 
   theme: {
     extend: {
+      screens: {
+        "2xl": "2200px",
+      },
       colors: {
         accent: {
           DEFAULT: "#173F58",
@@ -87,5 +90,16 @@ module.exports = {
     "font-rg",
     "text-accent-light",
     "text-gray-200",
+    "bg-gradient-to-t",
+    "bg-gradient-to-b",
+    "bg-gradient-to-l",
+    "bg-gradient-to-r",
+    "bg-gradient-to-tr",
+    "bg-gradient-to-tl",
+    "bg-gradient-to-br",
+    "bg-gradient-to-bl",
+    "from-accent",
+    "to-transparent",
+    "to-white",
   ],
 };

@@ -7,7 +7,7 @@ export default function NewsCard({ title, description, to = "#", date }) {
       href={to}
       target="_blank"
       rel="noopener noreferrer"
-      className="col-span-full bg-gray-100 rounded-lg px-6 py-4 transition-all duration-200 flex flex-col md:flex-row justify-between group"
+      className="col-span-full bg-gray-50 rounded-lg px-6 py-4 hover:bg-gray-100 transition-color duration-200 flex flex-col md:flex-row justify-between group"
     >
       <div className="flex flex-col">
         <p className="text-xs text-gray-500 mb-1">{date}</p>
