@@ -9,57 +9,47 @@ const complianceData = [
     id: 1,
     title: "Certificazione ISO 9001",
     description:
-      "Lo Studio dott. Riccardo Broggini opera ed eroga i propri servizi in conformità alla norma ISO 9001, sistema di gestione della qualità certificato da ente terzo dal 2004.",
-    image: "/assets/images/webp/penna_elefante.webp",
+      "Avendo come obiettivo generale il conseguimento di elevati standard qualitativi, lo Studio applica, sin dal 2004, un sistema di gestione per la qualità in conformità alla norma UNI EN ISO 9001/2015",
+    image: "/assets/images/webp/csqa.png",
     imagePosition: "right",
-    badge: "/assets/images/webp/iso9001.webp",
-    buttonText: "Leggi la nostra Politica per la Qualità",
+    imageHeight: "200px",
+    // pdf facoltativo: se non presente, il bottone non compare
   },
   {
     id: 2,
-    title: "Certificazione SR 10",
+    title: "Certificazione SR10",
     description:
-      "Dal 2023 lo Studio dott. Riccardo Broggini ha deciso di estendere il perimetro della certificazione allo standard IQNET SR10 per la responsabilità sociale.",
-    image: "/assets/images/webp/gestione_crisi_impresa.webp",
+      "Consapevole della responsabilità che una struttura come la nostra ha all’interno della società in cui opera, dal 2024 abbiamo implementato un Sistema di Gestione della Responsabilità Sociale in conformità con lo Standard SR 10 di IQNet così da essere aiutati a raggiungere la soddisfazione dei bisogni e delle aspettative degli stakeholder e a contribuire allo sviluppo sostenibile, tutto attraverso un comportamento trasparente ed etico.",
+    image: "/assets/images/webp/sr10.webp",
     imagePosition: "left",
-    badge: "/assets/images/webp/sr10.webp",
-    buttonText: "Scopri di più",
   },
   {
     id: 3,
-    title: "Politica per la qualità e la responsabilità sociale d’impresa",
-    description:
-      "Lo Studio dott. Riccardo Broggini intende mantenere e migliorare la posizione di rilievo di cui gode attualmente nel settore nel quale opera, impegnandosi ad utilizzare il Sistema Qualità come strumento quotidiano per creare valore per i clienti e per i collaboratori.",
-    image: "/assets/images/webp/vetrata.webp",
-    imagePosition: "right",
-    buttonText: "Leggi la Politica per la Qualità",
-  },
-  {
-    id: 4,
     title: "Parità di genere",
     description:
       "Lo Studio da sempre crede nell’importanza di valorizzare le proprie risorse come elemento fondamentale per il raggiungimento degli obiettivi. Nel 2024 ha conseguito la certificazione UNI PDR 125. Ha intrapreso un percorso orientato a garantire pari dignità e pari opportunità per tutti i dipendenti e collaboratori, promuovendo politiche di gestione delle differenze e tutela della maternità e paternità, indipendentemente da provenienza, cultura, religione, genere, orientamento sessuale, opinioni politiche o altre caratteristiche personali.",
-    image: "/assets/images/webp/parita.webp",
-    imagePosition: "left",
-    buttonText: "Leggi la Politica per la Parità di Genere",
+    image: "/assets/images/webp/UNI_PDR_125_PARITA_DI_GENERE_Editable__1_.webp", // <-- sostituisci con il path reale
+    imageHeight: "240px",
+    imagePosition: "right",
   },
   {
-    id: 5,
+    id: 4,
     title: "Codice etico",
     description:
       "Il Codice Etico rappresenta la guida ai valori e ai principi di comportamento condivisi dallo Studio: regole chiare di trasparenza e responsabilità per tutti i collaboratori e dipendenti, a tutela dell’integrità e della reputazione dello Studio.",
     image: "/assets/images/webp/libri.webp",
-    imagePosition: "right",
-    buttonText: "Leggi il nostro Codice Etico",
+    imageHeight: "300px",
+    imagePosition: "left",
+    pdf: "/assets/documents/codice_etico_rev1.pdf", // <-- ora il bottone appare grazie a 'pdf'
   },
   {
-    id: 6,
+    id: 5,
     title: "Whistleblowing - Segnalazione molestie",
     description:
       "Lo Studio ha attivato un sistema di gestione delle segnalazioni per condotte illecite o non etiche, a tutela dell’organizzazione e dei dipendenti. È possibile effettuare le segnalazioni in modo responsabile, seguendo le procedure aziendali.",
     image: "/assets/images/webp/whistleblowing.webp",
-    imagePosition: "left",
-    buttonText: "Invia una segnalazione",
+    imageHeight: "300px",
+    imagePosition: "right",
   },
 ];
 
@@ -68,38 +58,44 @@ const ComplianceRow = ({
   description,
   image,
   imagePosition,
-  badge,
-  button, // now expecting a JSX element (optional)
+  pdf,
+  imageHeight, // <--- nuova prop
 }) => {
   return (
     <section className="py-12 px-8 leading-tight">
       <div
-        className={`h-fit flex flex-col ${
+        className={`flex flex-col ${
           imagePosition === "right" ? "lg:flex-row" : "lg:flex-row-reverse"
-        } items-start gap-8`}
+        } lg:items-stretch items-start gap-8`}
       >
-        <div className="lg:w-1/2 grow h-full flex flex-col justify-between">
+        {/* Colonna testo */}
+        <div className="lg:w-1/2 flex flex-col justify-start">
           <div>
-            <h2 className="text-2xl 2xl:text-5xl font-medium mb-4 2xl:mb-8">{title}</h2>
-            <p className="mb-6 2xl:text-xl">{description}</p>
-            {badge && (
-              <div className="my-4">
-                <img
-                  src={badge}
-                  alt={`${title} badge`}
-                  className="w-24 h-auto"
-                />
-              </div>
+            <h2 className="text-2xl 2xl:text-5xl font-medium mb-4 2xl:mb-8">
+              {title}
+            </h2>
+            <p className="2xl:text-xl">{description}</p>
+          </div>
+
+          {/* Azioni sempre in basso */}
+          <div className="mt-6 flex flex-col gap-3">
+            {pdf && (
+              <Button text="Visualizza" onClick={() => window.open(pdf, "_blank")} />
             )}
           </div>
-          {/* Only render button if it's provided */}
-          {button && <div>{button}</div>}
         </div>
-        <div className="lg:w-1/2 h-full">
+
+        {/* Colonna immagine */}
+        <div
+          className={`lg:w-1/2 overflow-hidden lg:flex items-start ${
+            imagePosition === "right" ? "justify-end" : "justify-start"
+          }`}
+        >
           <img
             src={image}
             alt={title}
-            className="w-full h-full rounded-lg object-cover"
+            style={{ height: imageHeight || "100%" }} // <-- altezza da JSON
+            className="object-contain rounded-lg"
           />
         </div>
       </div>
@@ -114,9 +110,10 @@ export default function Compliance() {
       <FoldSection
         title="Compliance"
         text="Consapevoli che il principale fattore di successo di ogni impresa è costituito dalle risorse umane, lo Studio Dott. Riccardo Broggini promuove il coinvolgimento del personale nel raggiungimento degli obiettivi strategici aziendali e sostiene lo sviluppo di un ambiente di lavoro caratterizzato da lealtà, fiducia reciproca e collaborazione, valorizzando le competenze professionali attraverso attività di formazione e crescita."
-        image="/assets/images/webp/servizi_fold.webp"
+        image="/assets/images/webp/news1.webp"
         height="h-[85vh]"
         overlay={true}
+        gradientDirection="r"
         textMaxWidth="md:max-w-3xl"
       />
 
@@ -127,22 +124,11 @@ export default function Compliance() {
             title={item.title}
             description={item.description}
             image={item.image}
-            badge={item.badge}
             imagePosition={item.imagePosition}
-            button={
-              item.title === "Codice etico" ? (
-                <Button
-                  text="Leggi il nostro Codice Etico"
-                  onClick={() =>
-                    window.open(
-                      "/assets/documents/codice_etico_rev1.pdf",
-                      "_blank"
-                    )
-                  }
-                />
-              ) : null
-            }
+            pdf={item.pdf}
+            imageHeight={item.imageHeight}
           />
+
           {index < complianceData.length - 1 && (
             <div className="flex justify-center">
               <hr className="w-1/2 border-t border-gray-300 my-4" />

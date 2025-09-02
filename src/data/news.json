@@ -1,58 +1,79 @@
 [
   {
-    "title": "Flat Tax a 200.000€ per i nuovi residenti in Italia",
-    "description": "Flat Tax raddoppiata per i nuovi residenti. Scopri chi può aderire e quali redditi sono agevolati.",
-    "date": "2024-07-16",
+    "title": "CIRC N.1-2024 – Dichiarazione IVA 2024",
+    "description": "Istruzioni per l’invio del Modello IVA/2024 (periodo d’imposta 2023), scadenze e compensazione del credito.",
+    "date": "2024-02-01",
     "cover": "/assets/images/webp/news1.webp",
-    "file": "/pdf/flat-tax-paperoni-residenza-italia.pdf"
+    "file": "/assets/documents/circolari/CIRC N.1-2024  - Dichiarazione IVA 2024.pdf"
   },
   {
-    "title": "Novità IRAP per liberi professionisti",
-    "description": "Dal 2025 cambiano le soglie IRAP per le attività individuali. Tutto quello che devi sapere.",
-    "date": "2024-06-10",
+    "title": "CIRC N.2-2024 – Bonus pubblicità 2023: dichiarazione investimenti",
+    "description": "Comunicazioni per chi ha prenotato il bonus pubblicità 2023: percentuali, ambiti ammessi e termine per la dichiarazione.",
+    "date": "2024-02-09",
     "cover": "/assets/images/webp/news1.webp",
-    "file": "/pdf/irap-professionisti-2025.pdf"
+    "file": "/assets/documents/circolari/CIRC N.2-2024 Bonus pubblicità - dichiarazione investimenti 2023.pdf"
   },
   {
-    "title": "Riforma fiscale 2024: i punti chiave",
-    "description": "Le novità più rilevanti della riforma fiscale approvata dal Governo.",
-    "date": "2024-05-02",
+    "title": "CIRC N.3-2024 – Modello Redditi 2024 (anno d’imposta 2023)",
+    "description": "Promemoria su scadenze, novità e documentazione per il Modello Redditi 2024 (anno 2023).",
+    "date": "2024-03-01",
     "cover": "/assets/images/webp/news1.webp",
-    "file": "/pdf/riforma-fiscale-2024.pdf"
+    "file": "/assets/documents/circolari/CIRC N.3 -2024 Modello Redditi 2024 anno 2023_mod.pdf"
   },
   {
-    "title": "Detrazione spese mediche 2023: novità e limiti",
-    "description": "Guida completa alle detrazioni per spese sanitarie nel 730/2023.",
-    "date": "2023-11-12",
+    "title": "CIRC N. 4-2024 – Utilizzo credito IVA",
+    "description": "Compensazione del credito IVA annuale: soglie (5.000€), visto di conformità, codici tributo e alternative.",
+    "date": "2024-03-15",
     "cover": "/assets/images/webp/news1.webp",
-    "file": "/pdf/detrazioni-mediche-2023.pdf"
+    "file": "/assets/documents/circolari/CIRC N. 4 - Utilizzo credito IVA.pdf"
   },
   {
-    "title": "Contributi INPS forfettari: cosa cambia nel 2023",
-    "description": "Modifiche ai contributi per chi è in regime forfettario: soglie e aliquote.",
-    "date": "2023-06-18",
+    "title": "CIRC N. 5-2024 – Enti del Terzo Settore",
+    "description": "Requisiti RUNTS, regimi fiscali, obblighi contabili, bilanci e controlli per ETS.",
+    "date": "2024-04-01",
     "cover": "/assets/images/webp/news1.webp",
-    "file": "/pdf/inps-forfettari-2023.pdf"
+    "file": "/assets/documents/circolari/CIRC N. 5_ Enti Terzo Settore.pdf"
   },
   {
-    "title": "Bonus casa 110%: proroghe e novità 2022",
-    "description": "Aggiornamento sulla proroga del Superbonus e cambiamenti normativi.",
-    "date": "2022-09-30",
+    "title": "CIRC N. 6-2024 – IMU 2024 (acconto e adempimenti)",
+    "description": "Aliquote, scadenze e documentazione da fornire per l’acconto IMU 2024.",
+    "date": "2024-05-20",
     "cover": "/assets/images/webp/news1.webp",
-    "file": "/pdf/superbonus-110-2022.pdf"
+    "file": "/assets/documents/circolari/CIRC N. 6 -2024 IMU 2024.pdf"
   },
   {
-    "title": "Nuovo limite contante 2022: cosa cambia",
-    "description": "Il tetto all'uso del contante è stato abbassato. Ecco i nuovi limiti e le sanzioni.",
-    "date": "2022-01-15",
+    "title": "CIRC N. 7-2024 – Crediti d’imposta “Industria 4.0” e R&S",
+    "description": "Obbligo comunicazioni ex ante/ex post per investimenti 2024; modelli e invii.",
+    "date": "2024-06-30",
     "cover": "/assets/images/webp/news1.webp",
-    "file": "/pdf/limite-contante-2022.pdf"
+    "file": "/assets/documents/circolari/CIRC N. 7-2024 Modelli per comunicazione dati crediti imposta “INDUSTRIA 4.0” E R&S .pdf"
   },
   {
-    "title": "Fattura elettronica 2021: obblighi e scadenze",
-    "description": "Tutti gli aggiornamenti sull'uso obbligatorio della fattura elettronica.",
-    "date": "2021-10-05",
+    "title": "CIRC N. 8-2024 – Patente a crediti nei cantieri",
+    "description": "Sistema di qualificazione in cantiere: requisiti, decurtazioni e sanzioni.",
+    "date": "2024-09-18",
     "cover": "/assets/images/webp/news1.webp",
-    "file": "/pdf/fattura-elettronica-2021.pdf"
+    "file": "/assets/documents/circolari/CIRC N. 8-2024 PATENTE A CREDITI CANTIERI.pdf"
+  },
+  {
+    "title": "CIRC N. 10-2024 – Saldo IMU 2024",
+    "description": "Promemoria saldo IMU 2024: aliquote e check documentale.",
+    "date": "2024-12-16",
+    "cover": "/assets/images/webp/news1.webp",
+    "file": "/assets/documents/circolari/CIRC N. 10 -2024 Saldo IMU 2024.pdf"
+  },
+  {
+    "title": "CIRC N. 11-2024 – Acconto IVA",
+    "description": "Metodi storico/previsionale/analitico, codici tributo e sanzioni.",
+    "date": "2024-12-18",
+    "cover": "/assets/images/webp/news1.webp",
+    "file": "/assets/documents/circolari/CIRC N. 11 -2024 Acconto IVA.pdf"
+  },
+  {
+    "title": "CIRC N. 12-2024 – Certificazione Unica e Modello 770",
+    "description": "Scadenze, adempimenti e flussi dati per CU e 770.",
+    "date": "2024-12-01",
+    "cover": "/assets/images/webp/news1.webp",
+    "file": "/assets/documents/circolari/CIRC N. 12 - CERTIFICAZIONE UNICA E MODELLO 770.pdf"
   }
 ]

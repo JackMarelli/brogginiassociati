@@ -39,7 +39,7 @@ export default function Circolari() {
 
       {/* Featured Article */}
       <section className="w-full px-6 relative mb-16">
-        <a href={latest.file} target="_blank" rel="noopener noreferrer">
+        <a href={latest.file} target="_blank">
           <div className="relative h-[60vh] rounded-lg overflow-hidden">
             <img
               src={latest.cover}
