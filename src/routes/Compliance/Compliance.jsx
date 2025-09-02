@@ -3,7 +3,6 @@ import BaseLayout from "../../layouts/BaseLayout/BaseLayout";
 import Button from "../../components/Button/Button";
 import FoldSection from "../../components/FoldSection/FoldSection";
 
-// Compliance services data structure
 const complianceData = [
   {
     id: 1,
@@ -13,7 +12,6 @@ const complianceData = [
     image: "/assets/images/webp/csqa.png",
     imagePosition: "right",
     imageHeight: "200px",
-    // pdf facoltativo: se non presente, il bottone non compare
   },
   {
     id: 2,
@@ -28,7 +26,7 @@ const complianceData = [
     title: "Parità di genere",
     description:
       "Lo Studio da sempre crede nell’importanza di valorizzare le proprie risorse come elemento fondamentale per il raggiungimento degli obiettivi. Nel 2024 ha conseguito la certificazione UNI PDR 125. Ha intrapreso un percorso orientato a garantire pari dignità e pari opportunità per tutti i dipendenti e collaboratori, promuovendo politiche di gestione delle differenze e tutela della maternità e paternità, indipendentemente da provenienza, cultura, religione, genere, orientamento sessuale, opinioni politiche o altre caratteristiche personali.",
-    image: "/assets/images/webp/UNI_PDR_125_PARITA_DI_GENERE_Editable__1_.webp", // <-- sostituisci con il path reale
+    image: "/assets/images/webp/UNI_PDR_125_PARITA_DI_GENERE_Editable__1_.webp",
     imageHeight: "240px",
     imagePosition: "right",
   },
@@ -40,7 +38,7 @@ const complianceData = [
     image: "/assets/images/webp/libri.webp",
     imageHeight: "300px",
     imagePosition: "left",
-    pdf: "/assets/documents/codice_etico_rev1.pdf", // <-- ora il bottone appare grazie a 'pdf'
+    pdf: "/assets/documents/codice_etico_rev1.pdf", 
   },
   {
     id: 5,
@@ -109,7 +107,7 @@ export default function Compliance() {
       {/* Hero Section */}
       <FoldSection
         title="Compliance"
-        text="Consapevoli che il principale fattore di successo di ogni impresa è costituito dalle risorse umane, lo Studio Dott. Riccardo Broggini promuove il coinvolgimento del personale nel raggiungimento degli obiettivi strategici aziendali e sostiene lo sviluppo di un ambiente di lavoro caratterizzato da lealtà, fiducia reciproca e collaborazione, valorizzando le competenze professionali attraverso attività di formazione e crescita."
+        text="Consapevoli che il principale fattore di successo è dato dalle persone, lo Studio Dott. Riccardo Broggini promuove il coinvolgimento del personale negli obiettivi e un ambiente fondato su lealtà, fiducia e collaborazione, valorizzando le competenze con formazione e crescita. Mettiamo le nostre capacità al servizio della comunità e del territorio, con sguardo al futuro: investiamo nell’educazione (scuole e ITS), nella cultura (Tra Sacro e Sacromonte), nel sociale e nello sport (La Gemma Rara, ASD Free Rider Sport Events) e in iniziative per la coesione locale. Vogliamo essere parte attiva del sistema-Paese e, sul fronte della sostenibilità, puntiamo su digitalizzazione, dematerializzazione dei documenti e comunità energetiche."
         image="/assets/images/webp/news1.webp"
         height="h-[85vh]"
         overlay={true}

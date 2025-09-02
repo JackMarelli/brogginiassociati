@@ -77,7 +77,7 @@ export default function Landing() {
     <BaseLayout>
       <FoldSection
         title="Studio Broggini"
-        text="Con oltre 50 anni di esperienza e professionalità, lo Studio Dott. Riccardo Broggini - Dottori Commercialisti Associati offre servizi e consulenza a contribuenti, professionisti e imprese in diversi ambiti."
+        text="Da oltre 50 anni siamo a fianco dei nostri clienti con professionalità e attenzione alle persone. "
         image="/assets/images/webp/fold.webp"
         buttonText="Leggi di più"
         buttonLink="/studio"
