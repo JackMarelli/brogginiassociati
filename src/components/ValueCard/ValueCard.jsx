@@ -1,6 +1,6 @@
 export default function ValueCard({ name, description, icon: Icon }) {
   return (
-    <div className="p-8 rounded-lg bg-gray-50">
+    <div className="h-full p-8 rounded-lg bg-gray-50">
       <div className="mb-4 text-gray-800">
         <Icon size={20} className="m-1" />
       </div>

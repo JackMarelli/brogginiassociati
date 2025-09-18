@@ -5,6 +5,7 @@ import ServiceCard from "../../components/ServiceCard/ServiceCard.jsx";
 import NewsCard from "../../components/NewsCard/NewsCard.jsx";
 import FoldSection from "../../components/FoldSection/FoldSection.jsx";
 import ReactPlayer from "react-player";
+import news from "../../data/news.json"; // es: src/data/news.json
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
@@ -49,29 +50,18 @@ export default function Landing() {
     },
   ];
 
-  const newsItems = [
-    {
-      title:
-        'Aumenta a 200.000 la Flat Tax per i "Paperoni" che trasferiscono la residenza in Italia',
-      description:
-        "Flat Tax raddoppiata a 200.000€ per i nuovi residenti esteri in Italia. Scopri chi può aderire e quali reqisiti...",
-      image: "/assets/images/webp/news1.webp",
-    },
-    {
-      title:
-        'Aumenta a 200.000 la Flat Tax per i "Paperoni" che trasferiscono la residenza in Italia',
-      description:
-        "Flat Tax raddoppiata a 200.000€ per i nuovi residenti esteri in Italia. Scopri chi può aderire e quali reqisiti...",
-      image: "/assets/images/webp/news1.webp",
-    },
-    {
-      title:
-        'Aumenta a 200.000 la Flat Tax per i "Paperoni" che trasferiscono la residenza in Italia',
-      description:
-        "Flat Tax raddoppiata a 200.000€ per i nuovi residenti esteri in Italia. Scopri chi può aderire e quali reqisiti...",
-      image: "/assets/images/webp/news1.webp",
-    },
-  ];
+  // Prepara le circolari reali
+  const circolari = [...news]
+    .filter((n) => n.file && typeof n.file === "string")
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+  // Util per data in IT
+  const fmtDate = (iso) =>
+    new Date(iso).toLocaleDateString("it-IT", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+    });
 
   return (
     <BaseLayout>
@@ -164,9 +154,26 @@ export default function Landing() {
           Stai sempre aggiornato con le ultime circolari redatte dal nostro
           studio
         </p>
+
         <div className="grid grid-cols-12 gap-4">
-          {newsItems.map((news, index) => (
-            <NewsCard key={index} {...news} />
+          {circolari.slice(0, 3).map((item, index) => (
+            <a
+              key={`${item.title}-${index}`}
+              href={encodeURI(item.file)} // gestisce spazi/caratteri speciali
+              target="_blank"
+              rel="noopener noreferrer"
+              className="col-span-12 md:col-span-6 lg:col-span-4"
+              aria-label={`Apri PDF: ${item.title}`}
+            >
+              <NewsCard
+                title={item.title}
+                description={item.description}
+                image={item.cover || "/assets/images/webp/news1.webp"}
+              />
+              <div className="mt-2 text-sm text-gray-500">
+                {fmtDate(item.date)}
+              </div>
+            </a>
           ))}
         </div>
       </section>

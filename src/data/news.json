@@ -1,6 +1,8 @@
 [
   {
     "title": "CIRC N.1-2024 – Dichiarazione IVA 2024",
+    "number": 1,
+    "year": 2024,
     "description": "Istruzioni per l’invio del Modello IVA/2024 (periodo d’imposta 2023), scadenze e compensazione del credito.",
     "date": "2024-02-01",
     "cover": "/assets/images/webp/news1.webp",
@@ -8,6 +10,8 @@
   },
   {
     "title": "CIRC N.2-2024 – Bonus pubblicità 2023: dichiarazione investimenti",
+    "number": 2,
+    "year": 2024,
     "description": "Comunicazioni per chi ha prenotato il bonus pubblicità 2023: percentuali, ambiti ammessi e termine per la dichiarazione.",
     "date": "2024-02-09",
     "cover": "/assets/images/webp/news1.webp",
@@ -15,6 +19,8 @@
   },
   {
     "title": "CIRC N.3-2024 – Modello Redditi 2024 (anno d’imposta 2023)",
+    "number": 3,
+    "year": 2024,
     "description": "Promemoria su scadenze, novità e documentazione per il Modello Redditi 2024 (anno 2023).",
     "date": "2024-03-01",
     "cover": "/assets/images/webp/news1.webp",
@@ -22,6 +28,8 @@
   },
   {
     "title": "CIRC N. 4-2024 – Utilizzo credito IVA",
+    "number": 4,
+    "year": 2024,
     "description": "Compensazione del credito IVA annuale: soglie (5.000€), visto di conformità, codici tributo e alternative.",
     "date": "2024-03-15",
     "cover": "/assets/images/webp/news1.webp",
@@ -29,6 +37,8 @@
   },
   {
     "title": "CIRC N. 5-2024 – Enti del Terzo Settore",
+    "number": 5,
+    "year": 2024,
     "description": "Requisiti RUNTS, regimi fiscali, obblighi contabili, bilanci e controlli per ETS.",
     "date": "2024-04-01",
     "cover": "/assets/images/webp/news1.webp",
@@ -36,6 +46,8 @@
   },
   {
     "title": "CIRC N. 6-2024 – IMU 2024 (acconto e adempimenti)",
+    "number": 6,
+    "year": 2024,
     "description": "Aliquote, scadenze e documentazione da fornire per l’acconto IMU 2024.",
     "date": "2024-05-20",
     "cover": "/assets/images/webp/news1.webp",
@@ -43,6 +55,8 @@
   },
   {
     "title": "CIRC N. 7-2024 – Crediti d’imposta “Industria 4.0” e R&S",
+    "number": 7,
+    "year": 2024,
     "description": "Obbligo comunicazioni ex ante/ex post per investimenti 2024; modelli e invii.",
     "date": "2024-06-30",
     "cover": "/assets/images/webp/news1.webp",
@@ -50,6 +64,8 @@
   },
   {
     "title": "CIRC N. 8-2024 – Patente a crediti nei cantieri",
+    "number": 8,
+    "year": 2024,
     "description": "Sistema di qualificazione in cantiere: requisiti, decurtazioni e sanzioni.",
     "date": "2024-09-18",
     "cover": "/assets/images/webp/news1.webp",
@@ -57,6 +73,8 @@
   },
   {
     "title": "CIRC N. 10-2024 – Saldo IMU 2024",
+    "number": 10,
+    "year": 2024,
     "description": "Promemoria saldo IMU 2024: aliquote e check documentale.",
     "date": "2024-12-16",
     "cover": "/assets/images/webp/news1.webp",
@@ -64,6 +82,8 @@
   },
   {
     "title": "CIRC N. 11-2024 – Acconto IVA",
+    "number": 11,
+    "year": 2024,
     "description": "Metodi storico/previsionale/analitico, codici tributo e sanzioni.",
     "date": "2024-12-18",
     "cover": "/assets/images/webp/news1.webp",
@@ -71,9 +91,74 @@
   },
   {
     "title": "CIRC N. 12-2024 – Certificazione Unica e Modello 770",
+    "number": 12,
+    "year": 2024,
     "description": "Scadenze, adempimenti e flussi dati per CU e 770.",
     "date": "2024-12-01",
     "cover": "/assets/images/webp/news1.webp",
     "file": "/assets/documents/circolari/CIRC N. 12 - CERTIFICAZIONE UNICA E MODELLO 770.pdf"
+  },
+  {
+    "title": "CIRC N. 1-2025 – Dichiarazione IVA 2025",
+    "number": 1,
+    "year": 2025,
+    "description": "Modello IVA/2025 (anno imposta 2024): invio, pagamenti, regole compensazione e check-list documenti.",
+    "date": "2025-02-01",
+    "cover": "/assets/images/webp/news1.webp",
+    "file": "/assets/documents/circolari/CIRC N. 1-2025  - Dichiarazione IVA 2025.pdf"
+  },
+  {
+    "title": "CIRC N. 2-2025 – Modello Redditi 2025 (anno d’imposta 2024)",
+    "number": 2,
+    "year": 2025,
+    "description": "Istruzioni invio documentazione e scadenze per il Modello Redditi 2025 – PF e titolari di P.IVA.",
+    "date": "2025-03-21",
+    "cover": "/assets/images/webp/news1.webp",
+    "file": "/assets/documents/circolari/CIRC N. 2 -2025 Modello Redditi 2025 anno 2024_mod.pdf"
+  },
+  {
+    "title": "CIRC N. 3-2025 – Polizze catastrofali: obbligo per le imprese",
+    "number": 3,
+    "year": 2025,
+    "description": "Obbligo di copertura danni a beni materiali per eventi calamitosi/catastrofali: soggetti, termini e sanzioni.",
+    "date": "2025-03-10",
+    "cover": "/assets/images/webp/news1.webp",
+    "file": "/assets/documents/circolari/CIRC N. 3 -2025 - Polizze catastrofali.pdf"
+  },
+  {
+    "title": "CIRC N. 4-2025 – Assegnazione/cessione/estromissione beni ai soci",
+    "number": 4,
+    "year": 2025,
+    "description": "Misure agevolate 2025: imposta sostitutiva, termini e casi (assegnazione, cessione, trasformazione, estromissione).",
+    "date": "2025-04-10",
+    "cover": "/assets/images/webp/news1.webp",
+    "file": "/assets/documents/circolari/CIRC N.4-2025  - Assegnazione, cessione, estromissione beni immobili ai soci.pdf"
+  },
+  {
+    "title": "CIRC N.5-2025 – Bonus in edilizia: novità, limiti e nuove aliquote",
+    "number": 5,
+    "year": 2025,
+    "description": "Panoramica 2025 su ristrutturazioni, ecobonus, sismabonus, barriere architettoniche e bonus mobili.",
+    "date": "2025-04-30",
+    "cover": "/assets/images/webp/news1.webp",
+    "file": "/assets/documents/circolari/CIRC N.5-2025  - Bonus in edilizia - novità, limiti e nuove aliquote.pdf"
+  },
+  {
+    "title": "CIRC N. 9-2025 – Obbligo iscrizione domicilio digitale (PEC) per amministratori",
+    "number": 9,
+    "year": 2025,
+    "description": "Nuovo adempimento 2025: PEC personale degli amministratori nel Registro Imprese, termini e sanzioni.",
+    "date": "2025-06-30",
+    "cover": "/assets/images/webp/news1.webp",
+    "file": "/assets/documents/circolari/CIRC N. 9 -2025 - Obbligo iscrizione domicilio digitale per amministratori di società.pdf"
+  },
+  {
+    "title": "CIRC N. 10-2025 – IMU 2025",
+    "number": 10,
+    "year": 2025,
+    "description": "Aliquote, acconto/saldo e documentazione da inviare per il corretto calcolo dell’IMU 2025.",
+    "date": "2025-05-05",
+    "cover": "/assets/images/webp/news1.webp",
+    "file": "/assets/documents/circolari/CIRC N.  10-2025 IMU 2025.pdf"
   }
 ]

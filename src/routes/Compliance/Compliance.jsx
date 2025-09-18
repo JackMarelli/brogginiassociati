@@ -9,9 +9,9 @@ const complianceData = [
     title: "Certificazione ISO 9001",
     description:
       "Avendo come obiettivo generale il conseguimento di elevati standard qualitativi, lo Studio applica, sin dal 2004, un sistema di gestione per la qualità in conformità alla norma UNI EN ISO 9001/2015",
-    image: "/assets/images/webp/csqa.png",
+    image: "/assets/images/ISO 9001_CERT 78616.jpg",
     imagePosition: "right",
-    imageHeight: "200px",
+    imageHeight: "100px",
   },
   {
     id: 2,
@@ -20,6 +20,7 @@ const complianceData = [
       "Consapevole della responsabilità che una struttura come la nostra ha all’interno della società in cui opera, dal 2024 abbiamo implementato un Sistema di Gestione della Responsabilità Sociale in conformità con lo Standard SR 10 di IQNet così da essere aiutati a raggiungere la soddisfazione dei bisogni e delle aspettative degli stakeholder e a contribuire allo sviluppo sostenibile, tutto attraverso un comportamento trasparente ed etico.",
     image: "/assets/images/webp/sr10.webp",
     imagePosition: "left",
+    imageHeight: "160px"
   },
   {
     id: 3,
@@ -27,7 +28,7 @@ const complianceData = [
     description:
       "Lo Studio da sempre crede nell’importanza di valorizzare le proprie risorse come elemento fondamentale per il raggiungimento degli obiettivi. Nel 2024 ha conseguito la certificazione UNI PDR 125. Ha intrapreso un percorso orientato a garantire pari dignità e pari opportunità per tutti i dipendenti e collaboratori, promuovendo politiche di gestione delle differenze e tutela della maternità e paternità, indipendentemente da provenienza, cultura, religione, genere, orientamento sessuale, opinioni politiche o altre caratteristiche personali.",
     image: "/assets/images/webp/UNI_PDR_125_PARITA_DI_GENERE_Editable__1_.webp",
-    imageHeight: "240px",
+    imageHeight: "100px",
     imagePosition: "right",
   },
   {
