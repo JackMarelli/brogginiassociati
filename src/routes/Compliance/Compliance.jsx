@@ -20,7 +20,7 @@ const complianceData = [
       "Consapevole della responsabilità che una struttura come la nostra ha all’interno della società in cui opera, dal 2024 abbiamo implementato un Sistema di Gestione della Responsabilità Sociale in conformità con lo Standard SR 10 di IQNet così da essere aiutati a raggiungere la soddisfazione dei bisogni e delle aspettative degli stakeholder e a contribuire allo sviluppo sostenibile, tutto attraverso un comportamento trasparente ed etico.",
     image: "/assets/images/webp/sr10.webp",
     imagePosition: "left",
-    imageHeight: "160px"
+    imageHeight: "160px",
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ const complianceData = [
     image: "/assets/images/webp/libri.webp",
     imageHeight: "300px",
     imagePosition: "left",
-    pdf: "/assets/documents/codice_etico_rev1.pdf", 
+    pdf: "/assets/documents/codice_etico_rev1.pdf",
   },
   {
     id: 5,
@@ -79,7 +79,10 @@ const ComplianceRow = ({
           {/* Azioni sempre in basso */}
           <div className="mt-6 flex flex-col gap-3">
             {pdf && (
-              <Button text="Visualizza" onClick={() => window.open(pdf, "_blank")} />
+              <Button
+                text="Visualizza"
+                onClick={() => window.open(pdf, "_blank")}
+              />
             )}
           </div>
         </div>
@@ -108,7 +111,11 @@ export default function Compliance() {
       {/* Hero Section */}
       <FoldSection
         title="Compliance"
-        text="Consapevoli che il principale fattore di successo è dato dalle persone, lo Studio Dott. Riccardo Broggini promuove il coinvolgimento del personale negli obiettivi e un ambiente fondato su lealtà, fiducia e collaborazione, valorizzando le competenze con formazione e crescita. Mettiamo le nostre capacità al servizio della comunità e del territorio, con sguardo al futuro: investiamo nell’educazione (scuole e ITS), nella cultura (Tra Sacro e Sacromonte), nel sociale e nello sport (La Gemma Rara, ASD Free Rider Sport Events) e in iniziative per la coesione locale. Vogliamo essere parte attiva del sistema-Paese e, sul fronte della sostenibilità, puntiamo su digitalizzazione, dematerializzazione dei documenti e comunità energetiche."
+        text="
+              Crediamo nelle persone, nella formazione e nella collaborazione come motore del successo.
+              Investiamo nel territorio: educazione, cultura, sport e inclusione sociale.
+              Vogliamo contribuire attivamente al sistema-Paese, ascoltando e operando attivamente.
+              Sostenibilità per noi significa digitalizzazione, dematerializzazione e cura del territorio e delle sue persone."
         image="/assets/images/webp/news1.webp"
         height="h-[85vh]"
         overlay={true}

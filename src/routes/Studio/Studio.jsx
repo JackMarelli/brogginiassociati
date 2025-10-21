@@ -26,49 +26,49 @@ export default function Studio() {
     {
       name: "Onestà",
       description:
-        "È la nostra responsabilità verso l’interesse pubblico: solo nel suo rispetto soddisfiamo i bisogni dei clienti. Promuoviamo anche un ruolo educativo alla legalità verso tutti gli stakeholder.",
+        "Rappresenta la nostra responsabilità verso l’interesse pubblico, convinti che soltanto nel rispetto di tale interesse possiamo soddisfare le necessità dei nostri clienti, impegnandoci anche in un ruolo educativo alla legalità nei confronti di tutti i nostri stakeholders.​",
       icon: Shield,
     },
     {
       name: "Impegno",
       description:
-        "Affidabilità e competenza per dare sempre il meglio a tutti i nostri interlocutori. Un impegno che si estende al sociale e al servizio reso a associazioni, istituzioni ed enti non profit del territorio.",
+        "Nel nostro lavoro, che significa affidabilità e competenza per assicurare sempre il meglio, in tutto ciò che facciamo, a tutti i nostri interlocutori. Un impegno che si estende anche nel sociale e nel servizio che, da sempre, prestiamo alle associazioni, istituzioni ed enti no profit del territorio.",
       icon: Target,
     },
     {
       name: "Squadra",
       description:
-        "Coesione, organizzazione e interdisciplinarità guidano il nostro operare. Essere una sola squadra, compatta e focalizzata, ci permette di offrire soluzioni efficaci e creare valore per clienti e collaboratori.",
+        "Rappresenta la coesione, l’organizzazione, l’interdisciplinarietà che ci contraddistingue e che indirizzano il nostro operato per una sempre maggiore integrazione fra i vari gruppi di lavoro. Per noi è importante essere una sola squadra, compatta e focalizzata, capace di agire a tutto campo e offrire la migliore soluzione possibile e creare valore per i nostri clienti e per chi lavora con noi.​",
       icon: Users,
     },
     {
       name: "Attenzione verso l’altro",
       description:
-        "Un vero modo d’essere: il nostro interlocutore si sente al centro, ascoltato e importante. Significa disponibilità, ascolto e capacità di alleggerire il lavoro altrui; è riconosciuta da clienti e collaboratori.",
+        "è un vero e proprio modo d’essere, il nostro interlocutore si sente al centro, ascoltato ed importante. Significa disponibilità, ascolto, capacità di sostituirsi all’altro a non rendere arduo e faticoso il lavoro altrui. Ci è riconosciuta dai nostri clienti, la si respira tra di noi, si percepisce nelle relazioni con i collaboratori e nel nostro essere attivi e presenti sul territorio.​",
       icon: HeartHandshake,
     },
     {
       name: "Innovazione e sguardo al futuro",
       description:
-        "Voglia di miglioramento continuo e modernità, senza fossilizzarsi su vecchi schemi. Ne sono prova la riorganizzazione interna e la digitalizzazione dei processi avviate negli ultimi anni.",
+        "Significa voglia di miglioramento continuo, di modernità, di non fossilizzarsi su vecchi schemi. Questo ci ha portato al profondo processo di riorganizzazione e di crescita, cominciato negli ultimi anni e ancora attuale. Ne sono un esempio la formalizzazione, il monitoraggio e la digitalizzazione dei processi..",
       icon: Lightbulb,
     },
     {
       name: "Etica",
       description:
-        "Rispetto delle regole, riservatezza, trasparenza, correttezza e fiducia. Responsabilità verso tutti gli stakeholder e la società civile, valorizzando le differenze e le attitudini individuali.",
+        "Rispetto delle regole, riservatezza delle informazioni acquisite, trasparenza, correttezza e fiducia, senso di responsabilità verso tutti i nostri stakeholders e la società civile. Questo include la promozione della coesistenza e della valorizzazione delle differenze, nel pieno rispetto di orientamenti, competenze e attitudini individuali. ​",
       icon: Scale,
     },
     {
       name: "Imprenditorialità",
       description:
-        "Proattività, determinazione e tenacia: voglia di sperimentare e crescere, senza ritenersi mai arrivati. Un atteggiamento condiviso da professionisti senior e giovani.",
+        "Proattività, determinazione, tenacia, voglia di sperimentarsi e di crescere, il non ritenersi mai arrivati è l’atteggiamento che contraddistingue sia i professionisti più affermati che i giovani.​",
       icon: Rocket,
     },
     {
       name: "Eccellenza",
       description:
-        "Competenza e aggiornamento continuo, precisione e attenzione al dettaglio. Processi solidi e una governance senior per soluzioni su misura dei bisogni del cliente.",
+        "Competenza e aggiornamento continuo, precisione e attenzione al dettaglio, processi solidi e consolidati e una governance composta da professionisti senior sono le basi per garantire soluzioni articolate e ritagliate alla soddisfazione dei bisogni del cliente.​",
       icon: Award,
     },
   ];

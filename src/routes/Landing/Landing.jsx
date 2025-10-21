@@ -87,7 +87,7 @@ export default function Landing() {
         <div className="w-full max-w-4xl mx-auto mb-20">
           <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
             <ReactPlayer
-              url="/assets/videos/50anni.mp4"
+              url="/assets/videos/50anni.mov"
               width="100%"
               height="100%"
               controls={true}
