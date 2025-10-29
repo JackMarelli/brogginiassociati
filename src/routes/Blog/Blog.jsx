@@ -57,8 +57,8 @@ export default function Circolari() {
     <BaseLayout>
       {/* Hero */}
       <section className="pt-32 pb-12 px-8 text-center">
-        <h1 className="text-4xl font-medium mb-4">Circolari</h1>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+        <h1 className="text-4xl 2xl:text-7xl font-medium mb-4">Circolari</h1>
+        <p className="text-lg 2xl:text-xl text-gray-600 max-w-3xl mx-auto">
           Tieniti aggiornato con le ultime circolari redatte dal nostro studio
         </p>
       </section>
@@ -74,8 +74,8 @@ export default function Circolari() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 p-8 text-white xl:text-center z-20">
-                <h2 className="text-3xl font-medium mb-2">{latest.title}</h2>
-                <p className="text-md text-gray-100">{latest.description}</p>
+                <h2 className="text-3xl 2xl:text-4xl font-medium mb-2">{latest.title}</h2>
+                <p className="text-md 2xl:text-lg text-gray-100">{latest.description}</p>
                 <div className="mt-2 text-sm text-gray-200">
                   N. {latest.number} • {latest.year}
                 </div>

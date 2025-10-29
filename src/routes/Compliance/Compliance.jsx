@@ -61,7 +61,7 @@ const ComplianceRow = ({
   imageHeight, // <--- nuova prop
 }) => {
   return (
-    <section className="py-12 px-8 leading-tight">
+  <section className="py-12 px-8 leading-tight 2xl:leading-relaxed">
       <div
         className={`flex flex-col ${
           imagePosition === "right" ? "lg:flex-row" : "lg:flex-row-reverse"

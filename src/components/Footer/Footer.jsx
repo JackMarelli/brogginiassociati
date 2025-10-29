@@ -45,8 +45,8 @@ export default function Footer() {
 
           {/* Altre pagine Column */}
           <div className="col-span-1">
-            <h3 className="text-lg 2xl:text-xl mb-4">Altre pagine</h3>
-            <ul className="space-y-2 text-sm 2xl:text-base">
+            <h3 className="text-lg 2xl:text-2xl mb-4">Altre pagine</h3>
+            <ul className="space-y-2 text-sm 2xl:text-lg">
               <li>
                 <Link
                   to="/compliance"
@@ -68,8 +68,8 @@ export default function Footer() {
 
           {/* Come trovarci Column */}
           <div className="col-span-1">
-            <h3 className="text-lg 2xl:text-xl mb-4">Come trovarci</h3>
-            <ul className="space-y-2 text-sm 2xl:text-base">
+            <h3 className="text-lg 2xl:text-2xl mb-4">Come trovarci</h3>
+            <ul className="space-y-2 text-sm 2xl:text-lg"> 
               <li className="text-gray-300">Varese - Via Dandolo 5</li>
               <li className="text-gray-300">Busto A. - Via Marsala 20</li>
               <li className="mt-2">
@@ -87,8 +87,8 @@ export default function Footer() {
 
           {/* Contatti Column */}
           <div className="col-span-1">
-            <h3 className="text-lg 2xl:text-xl mb-4">Contatti</h3>
-            <ul className="space-y-2 text-sm 2xl:text-base">
+            <h3 className="text-lg 2xl:text-2xl mb-4">Contatti</h3>
+            <ul className="space-y-2 text-sm 2xl:text-lg"> 
               <li className="text-gray-300">(+39) 0332 287598</li>
               <li className="text-gray-300">studio@pec.brogginiassociati.it</li>
               <li className="text-gray-300">studio@brogginiassociati.it</li>
@@ -99,11 +99,11 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-700 mt-12 pt-3 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-xs">
+          <p className="text-gray-400 text-xs 2xl:text-sm">
             Copyright © Studio Broggini 2025
           </p>
           <Link to="/privacy">
-            <p className="text-gray-400 text-xs">Privacy Policy</p>
+            <p className="text-gray-400 text-xs 2xl:text-sm">Privacy Policy</p>
           </Link>
         </div>
       </div>

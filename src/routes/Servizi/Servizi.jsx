@@ -69,14 +69,14 @@ const serviziData = [
 // Reusable Service Row Component
 const ServiceRow = ({ title, description, image, imagePosition, items }) => {
   return (
-    <section className="py-16 px-8 leading-tight">
+  <section className="py-16 px-8 leading-tight 2xl:leading-relaxed">
       <div
         className={`flex flex-col ${
           imagePosition === "right" ? "lg:flex-row" : "lg:flex-row-reverse"
         } items-center gap-8`}
       >
-        <div className="lg:w-1/2 2xl:text-lg">
-          <h2 className="text-4xl 2xl:text-5xl font-medium mb-6">{title}</h2>
+        <div className="lg:w-1/2 2xl:text-xl">
+          <h2 className="text-4xl 2xl:text-6xl font-medium mb-6">{title}</h2>
           <p className="mb-4">{description}</p>
           <p className="font-medium mt-6 mb-2">In particolare:</p>
           <ul className="list-disc pl-6 space-y-2">

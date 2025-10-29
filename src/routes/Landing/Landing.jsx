@@ -66,7 +66,16 @@ export default function Landing() {
   return (
     <BaseLayout>
       <FoldSection
-        title="Studio dott. Riccardo Broggini – Dottori Commercialisti Associati"
+        title={
+          <>
+            <img
+              src="/assets/logo/white.png"
+              alt="Studio Broggini Logo"
+              className="w-28 block mb-4"
+            />
+            Studio dott. Riccardo Broggini – Dottori Commercialisti Associati
+          </>
+        }
         text="Da oltre 50 anni siamo a fianco dei nostri clienti con professionalità e attenzione alle persone. "
         image="/assets/images/webp/fold.webp"
         buttonText="Leggi di più"
@@ -75,10 +84,10 @@ export default function Landing() {
       />
 
       <section className="flex flex-col items-center bg-white py-20 px-8 md:px-32 lg:px-64">
-        <h2 className="text-5xl md:text-6xl 2xl:text-7xl font-semibold text-center mb-8 2xl:mb-10">
+        <h2 className="text-5xl md:text-6xl 2xl:text-8xl font-semibold 2xl:font-medium text-center mb-8 2xl:mb-10">
           I nostri obiettivi, <br /> da 50 anni
         </h2>
-        <p className="text-xl 2xl:text-2xl font-sm text-center max-w-3xl mb-12 2xl:mb-14">
+        <p className="text-xl 2xl:text-2xl font-sm text-center max-w-3xl mb-12 2xl:mb-16">
           Costruire con <span className="italic">cura</span> un rapporto di
           fiducia duraturo tra il cliente e il professionista, offrendo al
           contempo competenze diversificate e specializzazioni complementari per
@@ -88,7 +97,7 @@ export default function Landing() {
           <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
             <ReactPlayer
               url="/assets/videos/50anni.mov"
-              width="10
+              width="100%"
               height="100%"
               controls={true}
               light="/assets/images/webp/thumbnail.webp"
@@ -103,10 +112,10 @@ export default function Landing() {
 
       <section className="bg-white py-16">
         <div className="container mx-auto px-6">
-          <h2 className="text-5xl 2xl:text-7xl font-medium mb-6 2xl:mb-8 text-center">
+          <h2 className="text-5xl 2xl:text-8xl font-medium mb-6 2xl:mb-8 text-center">
             Le nostre competenze
           </h2>
-          <p className="text-center text-lg 2xl:text-xl mb-16 2xl:mb-20 max-w-xl mx-auto">
+          <p className="text-center text-lg 2xl:text-2xl mb-16 2xl:mb-20 max-w-xl 2xl:max-w-3xl mx-auto">
             Siamo un team di professionisti con competenze specialistiche che
             guidano il cliente nelle diverse aree di attività
           </p>
@@ -147,33 +156,26 @@ export default function Landing() {
       </section>
 
       <section className="py-20 px-8">
-        <h2 className="text-5xl md:text-5xl 2xl:text-7xl font-medium text-center mb-6 2xl:mb-8">
+        <h2 className="text-5xl md:text-5xl 2xl:text-8xl font-medium text-center mb-6 2xl:mb-8">
           Rimani aggiornato
         </h2>
-        <p className="text-center text-lg 2xl:text-xl mb-12 2xl:mb-14">
+        <p className="text-center text-lg 2xl:text-2xl mb-12 2xl:mb-14">
           Stai sempre aggiornato con le ultime circolari redatte dal nostro
           studio
         </p>
 
         <div className="grid grid-cols-12 gap-4">
           {circolari.slice(0, 3).map((item, index) => (
-            <a
-              key={`${item.title}-${index}`}
-              href={encodeURI(item.file)} // gestisce spazi/caratteri speciali
-              target="_blank"
-              rel="noopener noreferrer"
-              className="col-span-12 md:col-span-6 lg:col-span-4"
-              aria-label={`Apri PDF: ${item.title}`}
-            >
+            <div key={`${item.title}-${index}`} className="col-span-12 md:col-span-6 lg:col-span-4">
               <NewsCard
                 title={item.title}
                 description={item.description}
                 image={item.cover || "/assets/images/webp/news1.webp"}
+                date={fmtDate(item.date)}
+                to={encodeURI(item.file)}
+                ariaLabel={`Apri PDF: ${item.title}`}
               />
-              <div className="mt-2 text-sm text-gray-500">
-                {fmtDate(item.date)}
-              </div>
-            </a>
+            </div>
           ))}
         </div>
       </section>

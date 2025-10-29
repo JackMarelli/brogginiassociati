@@ -94,7 +94,7 @@ export default function Studio() {
               <br />
               Riccardo Broggini
             </h2>
-            <div className="space-y-4 text-md 2xl:text-lg">
+            <div className="space-y-4 text-md 2xl:text-xl">
               <p>
                 Siamo uno studio di dottori commercialisti,{" "}
                 <strong>con una storia di 50 anni</strong>, che sin dall’origine
@@ -151,10 +151,10 @@ export default function Studio() {
 
       {/* Values Section */}
       <section className="py-20 px-8 md:px-16 lg:px-24">
-        <h2 className="text-xl md:text-4xl 2xl:text-6xl font-medium text-center">
+        <h2 className="text-xl md:text-4xl 2xl:text-7xl font-medium text-center">
           I nostri valori
         </h2>
-        <div className="max-w-2xl mx-auto text-center text-gray-600 mt-4 2xl:text-lg">
+        <div className="max-w-2xl mx-auto text-center text-gray-600 mt-4 2xl:text-xl 2xl:max-w-3xl 2xl:my-8 2xl:mb-16">
           <p>
             I nostri valori possono essere riassunti nella parola{" "}
             <strong>Cura</strong>.
@@ -167,7 +167,7 @@ export default function Studio() {
         </div>
 
         {/* Desktop / tablet grid */}
-        <div className="hidden md:grid md:grid-cols-12 gap-8 max-w-7xl mx-auto mt-12">
+  <div className="hidden md:grid md:grid-cols-12 gap-8 max-w-7xl 2xl:max-w-[70%] mx-auto mt-12 2xl:mt-8">
           {values.map((value, index) => (
             <div
               key={index}
