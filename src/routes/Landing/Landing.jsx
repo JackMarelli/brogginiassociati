@@ -66,7 +66,7 @@ export default function Landing() {
   return (
     <BaseLayout>
       <FoldSection
-        title="Studio Broggini"
+        title="Studio dott. Riccardo Broggini – Dottori Commercialisti Associati"
         text="Da oltre 50 anni siamo a fianco dei nostri clienti con professionalità e attenzione alle persone. "
         image="/assets/images/webp/fold.webp"
         buttonText="Leggi di più"
@@ -75,10 +75,10 @@ export default function Landing() {
       />
 
       <section className="flex flex-col items-center bg-white py-20 px-8 md:px-32 lg:px-64">
-        <h2 className="text-5xl md:text-6xl font-semibold text-center mb-8">
+        <h2 className="text-5xl md:text-6xl 2xl:text-7xl font-semibold text-center mb-8 2xl:mb-10">
           I nostri obiettivi, <br /> da 50 anni
         </h2>
-        <p className="text-xl font-sm text-center max-w-3xl mb-12">
+        <p className="text-xl 2xl:text-2xl font-sm text-center max-w-3xl mb-12 2xl:mb-14">
           Costruire con <span className="italic">cura</span> un rapporto di
           fiducia duraturo tra il cliente e il professionista, offrendo al
           contempo competenze diversificate e specializzazioni complementari per
@@ -88,7 +88,7 @@ export default function Landing() {
           <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
             <ReactPlayer
               url="/assets/videos/50anni.mov"
-              width="100%"
+              width="10
               height="100%"
               controls={true}
               light="/assets/images/webp/thumbnail.webp"
@@ -103,10 +103,10 @@ export default function Landing() {
 
       <section className="bg-white py-16">
         <div className="container mx-auto px-6">
-          <h2 className="text-5xl font-medium mb-6 text-center">
+          <h2 className="text-5xl 2xl:text-7xl font-medium mb-6 2xl:mb-8 text-center">
             Le nostre competenze
           </h2>
-          <p className="text-center text-lg mb-16 max-w-xl mx-auto">
+          <p className="text-center text-lg 2xl:text-xl mb-16 2xl:mb-20 max-w-xl mx-auto">
             Siamo un team di professionisti con competenze specialistiche che
             guidano il cliente nelle diverse aree di attività
           </p>
@@ -147,10 +147,10 @@ export default function Landing() {
       </section>
 
       <section className="py-20 px-8">
-        <h2 className="text-5xl md:text-5xl font-medium text-center mb-6">
+        <h2 className="text-5xl md:text-5xl 2xl:text-7xl font-medium text-center mb-6 2xl:mb-8">
           Rimani aggiornato
         </h2>
-        <p className="text-center text-lg mb-12">
+        <p className="text-center text-lg 2xl:text-xl mb-12 2xl:mb-14">
           Stai sempre aggiornato con le ultime circolari redatte dal nostro
           studio
         </p>
@@ -185,10 +185,10 @@ export default function Landing() {
           className="w-full h-full object-cover"
         />
         <div className="h-fit w-fit absolute top-1/2 -translate-y-1/2 left-8 md:left-16 flex flex-col gap-6">
-          <h1 className="text-white text-6xl md:text-4xl font-md">
+          <h1 className="text-white text-6xl md:text-4xl 2xl:text-6xl font-md">
             La nostra mission
           </h1>
-          <h2 className="text-white text-md max-w-[300px] md:max-w-[45%]">
+          <h2 className="text-white text-md 2xl:text-lg max-w-[300px] md:max-w-[45%]">
             Ci impegniamo ogni giorno per garantire ai nostri clienti
             l’attenzione e il tempo di cui hanno bisogno e per supportarli con
             professionalità, rapidità e flessibilità.

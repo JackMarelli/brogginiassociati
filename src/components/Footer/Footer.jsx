@@ -15,8 +15,8 @@ export default function Footer() {
           </div>
           {/* Esplora Column */}
           <div className="col-span-1 xl:col-start-3">
-            <h3 className="text-lg mb-4">Esplora</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="text-lg 2xl:text-xl mb-4">Esplora</h3>
+            <ul className="space-y-2 text-sm 2xl:text-base">
               <li>
                 <Link to="/" className="text-gray-300 hover:text-white">
                   Home
@@ -45,8 +45,8 @@ export default function Footer() {
 
           {/* Altre pagine Column */}
           <div className="col-span-1">
-            <h3 className="text-lg mb-4">Altre pagine</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="text-lg 2xl:text-xl mb-4">Altre pagine</h3>
+            <ul className="space-y-2 text-sm 2xl:text-base">
               <li>
                 <Link
                   to="/compliance"
@@ -68,8 +68,8 @@ export default function Footer() {
 
           {/* Come trovarci Column */}
           <div className="col-span-1">
-            <h3 className="text-lg mb-4">Come trovarci</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="text-lg 2xl:text-xl mb-4">Come trovarci</h3>
+            <ul className="space-y-2 text-sm 2xl:text-base">
               <li className="text-gray-300">Varese - Via Dandolo 5</li>
               <li className="text-gray-300">Busto A. - Via Marsala 20</li>
               <li className="mt-2">
@@ -87,8 +87,8 @@ export default function Footer() {
 
           {/* Contatti Column */}
           <div className="col-span-1">
-            <h3 className="text-lg mb-4">Contatti</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="text-lg 2xl:text-xl mb-4">Contatti</h3>
+            <ul className="space-y-2 text-sm 2xl:text-base">
               <li className="text-gray-300">(+39) 0332 287598</li>
               <li className="text-gray-300">studio@pec.brogginiassociati.it</li>
               <li className="text-gray-300">studio@brogginiassociati.it</li>

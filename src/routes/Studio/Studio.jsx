@@ -89,12 +89,12 @@ export default function Studio() {
       <section className="py-20 px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col gap-6">
-            <h2 className="text-4xl md:text-4xl font-medium mb-8">
+            <h2 className="text-4xl md:text-4xl 2xl:text-6xl font-medium mb-8 2xl:mb-10">
               Studio Dott.
               <br />
               Riccardo Broggini
             </h2>
-            <div className="space-y-4 text-md">
+            <div className="space-y-4 text-md 2xl:text-lg">
               <p>
                 Siamo uno studio di dottori commercialisti,{" "}
                 <strong>con una storia di 50 anni</strong>, che sin dall’origine
@@ -151,10 +151,10 @@ export default function Studio() {
 
       {/* Values Section */}
       <section className="py-20 px-8 md:px-16 lg:px-24">
-        <h2 className="text-xl md:text-4xl font-medium text-center">
+        <h2 className="text-xl md:text-4xl 2xl:text-6xl font-medium text-center">
           I nostri valori
         </h2>
-        <div className="max-w-2xl mx-auto text-center text-gray-600 mt-4">
+        <div className="max-w-2xl mx-auto text-center text-gray-600 mt-4 2xl:text-lg">
           <p>
             I nostri valori possono essere riassunti nella parola{" "}
             <strong>Cura</strong>.

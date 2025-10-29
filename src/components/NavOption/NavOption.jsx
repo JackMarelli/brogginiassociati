@@ -16,7 +16,7 @@ export default function NavOption({ text = "Option", to = "" }) {
   return (
     <span
       onClick={handleClick}
-      className={`w-fit text-sm font-normal cursor-pointer transition-colors duration-200 ${
+      className={`w-fit text-sm 2xl:text-base font-normal cursor-pointer transition-colors duration-200 ${
         isActive ? "text-black" : "text-gray-400 hover:text-gray-700"
       }`}
     >

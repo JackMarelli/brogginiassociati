@@ -20,7 +20,7 @@ export default function Professionisti() {
 
       {/* Soci Section */}
       <section className="py-16 px-8 md:px-16">
-        <h2 className="text-5xl font-medium text-center mb-16">Soci</h2>
+        <h2 className="text-5xl 2xl:text-7xl font-medium text-center mb-16 2xl:mb-20">Soci</h2>
         <div className="flex flex-wrap justify-center gap-8">
           {soci.map((socio) => (
             <ProfessionalCard
@@ -36,7 +36,7 @@ export default function Professionisti() {
 
       {/* Associati Section */}
       <section className="py-16 px-8 bg-white">
-        <h2 className="text-5xl font-medium text-center mb-16">Associati</h2>
+        <h2 className="text-5xl 2xl:text-7xl font-medium text-center mb-16 2xl:mb-20">Associati</h2>
         <div className="flex flex-wrap justify-center gap-8">
           {associati.map((associato) => (
             <ProfessionalCard
