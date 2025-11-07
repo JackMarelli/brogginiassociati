@@ -45,8 +45,8 @@ export default function Professionista() {
       <div className="container mx-auto py-32 px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Image Column */}
-          <div className="h-full">
-            <div className="bg-gray-100 rounded-lg overflow-hidden h-full max-h-[600px] ">
+          <div className="h-full flex items-start justify-end">
+            <div className="bg-gray-100 rounded-lg overflow-hidden h-full aspect-[3/4] max-h-[800px]">
               <img 
                 src={professionista.image} 
                 alt={professionista.name} 

@@ -89,7 +89,7 @@ export default function Nav() {
         <Button
           text="Contattaci"
           onClick={() => {
-            window.scrollTo(0, 9999);
+            document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
           }}
         />
       </div>
@@ -161,7 +161,15 @@ export default function Nav() {
             onClick={() => setIsMenuOpen(false)}
           />
           <div className="mt-4">
-            <Button text="Contattaci" onClick={() => setIsMenuOpen(false)} />
+            <Button 
+              text="Contattaci" 
+              onClick={() => {
+                setIsMenuOpen(false);
+                setTimeout(() => {
+                  document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+              }} 
+            />
           </div>
         </div>
       </div>
